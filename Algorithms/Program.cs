@@ -15,22 +15,11 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            int[] inputArray = { 6, 2, 3, 8 };
 
-            //int adjaResult = AdjacentElementsProduct.Product(inputArray);
-
-            int result = MakeArrayConsecutive_MissingNumbers_.MissingNumbers(inputArray);
-
-            //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-            //int d = 2;
-            //int[] result1 = ArrayOperation.ArrayRotation(arr, d);
-
-
-            //int result = UglyNumbers.FindNthUglyNumber(7);
+            //int result = MakeArrayConsecutive_MissingNumbers_.MissingNumbers(inputArray);
 
 
             Console.ReadLine();
-
         }
 
     }

@@ -8,6 +8,10 @@ namespace Algorithms.Q
 {
     public class ArrayOperation
     {
+        //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+        //int d = 2;
+        //int[] result1 = ArrayOperation.ArrayRotation(arr, d);
+
         public static int[] ArrayRotation(int[] inputArray, int rotationTimes)
         {
             //This method will work for shifting left

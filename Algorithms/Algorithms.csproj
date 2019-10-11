@@ -72,6 +72,7 @@
     <Compile Include="Q\Dynamicprogramming.cs" />
     <Compile Include="Q\Fibonacci.cs" />
     <Compile Include="Q\FirstDigitNumber.cs" />
+    <Compile Include="Q\Leaderofthearray.cs" />
     <Compile Include="Q\MakeArrayConsecutive_MissingNumbers_.cs" />
     <Compile Include="Q\MatrixTransposition.cs" />
     <Compile Include="Q\others.cs" />
@@ -79,6 +80,7 @@
     <Compile Include="Q\searching.cs" />
     <Compile Include="Q\Sorting.cs" />
     <Compile Include="Q\UglyNumbers.cs" />
+    <Compile Include="Q\Utilities.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
