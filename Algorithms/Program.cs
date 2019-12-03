@@ -17,11 +17,10 @@ namespace Algorithms
         static void Main(string[] args)
         {
 
-            var affected = new List<int>() { 1, 2 };
-            var poisonous = new List<int>() { 3, 5 };
-            int n = 5;
-
-            long result = BiologicalHazards.BioHazardSol2(n, affected, poisonous);
+            string firstDate = "1-January-2000";
+            string lastDate = "22-February-2000";
+            string weekDay = "Monday";
+            StockPrices.openAndClosePrices(firstDate, lastDate, weekDay);
 
             Console.ReadLine();
         }

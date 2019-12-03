@@ -84,6 +84,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="VanHack\BiologicalHazards.cs" />
     <Compile Include="VanHack\ImageEditing.cs" />
+    <Compile Include="VanHack\StockPrices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
