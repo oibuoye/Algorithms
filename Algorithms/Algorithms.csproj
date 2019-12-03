@@ -82,6 +82,7 @@
     <Compile Include="Q\UglyNumbers.cs" />
     <Compile Include="Q\Utilities.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="VanHack\BiologicalHazards.cs" />
     <Compile Include="VanHack\ImageEditing.cs" />
   </ItemGroup>
   <ItemGroup>
