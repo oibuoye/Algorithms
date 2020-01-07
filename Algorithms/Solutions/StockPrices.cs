@@ -5,12 +5,18 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.VanHack
+namespace Algorithms.Solutions
 {
     public class StockPrices
     {
         public static void openAndClosePrices(string firstDate, string lastDate, string weekDay)
         {
+            //string firstDate = "1-January-2000";
+            //string lastDate = "22-February-2000";
+            //string weekDay = "Monday";
+            //StockPrices.openAndClosePrices(firstDate, lastDate, weekDay);
+
+
             int defaultPageNumber = 1;
             try
             {

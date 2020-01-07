@@ -1,5 +1,6 @@
-﻿using Algorithms.Q;
-using Algorithms.VanHack;
+﻿using Algorithms.DynamicProgramming;
+using Algorithms.Solutions;
+using Algorithms.Solutions;
 using Hangfire;
 using Hangfire.SqlServer;
 using Microsoft.Owin.Hosting;
@@ -17,10 +18,8 @@ namespace Algorithms
         static void Main(string[] args)
         {
 
-            string firstDate = "1-January-2000";
-            string lastDate = "22-February-2000";
-            string weekDay = "Monday";
-            StockPrices.openAndClosePrices(firstDate, lastDate, weekDay);
+            string word = "abbc";
+            CountSubsequencesofType.GetSubsequentType(word, 1);
 
             Console.ReadLine();
         }

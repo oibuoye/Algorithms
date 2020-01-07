@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.Q
+namespace Algorithms.DynamicProgramming
 {
     public class ChangeCoin
     {
@@ -28,7 +28,7 @@ namespace Algorithms.Q
 
             for (int i = 1; i <= amount; i++)
             {
-                solution[0,i] = 0;
+                solution[0, i] = 0;
             }
 
             // now fill rest of the matrix.

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms.Q
+namespace Algorithms.Solutions
 {
     public class AdjacentElementsProduct
     {
@@ -15,7 +15,6 @@ namespace Algorithms.Q
 
         public static int Product(int[] inputArray)
         {
-
             //1st solution
             int product = 0;
 
