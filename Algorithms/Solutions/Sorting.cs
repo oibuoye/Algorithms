@@ -112,11 +112,6 @@ namespace Algorithms.Solutions
                 arr[j] = newValue;
 
             }
-
-            foreach (int val in arr)
-            {
-                Response.Write(string.Format("{0},", val));
-            }
         }
 
     }

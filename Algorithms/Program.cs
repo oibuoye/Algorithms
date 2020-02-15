@@ -706,6 +706,41 @@ namespace Algorithms
             //int result = UglyNumbers.FindNthUglyNumber(7);
             #endregion
 
+            #region Abstract class in C#
+            //TestingAbstract.Car car;
+
+            //car = new TestingAbstract.WagonR();
+            //Console.WriteLine($"Checking for Wagon::: {car.getIsSedan()}");
+
+            //car = new TestingAbstract.InnovaCrysta();
+            //Console.WriteLine($"Checking for Innova Crysta::: {car.getIsSedan()}");
+
+            //car = new TestingAbstract.HondaCity();
+            //Console.WriteLine($"Checking for Honda City::: {car.getIsSedan()}");
+            #endregion
+
+            #region Socks merchant
+            //int[] socks = { 1, 2, 1, 2, 1, 3, 2 };
+            //int[] socks = { 10, 20, 20, 10, 10, 30, 50, 10, 20 };
+            //int resultWays = SockMerchantSolution.sockMerchant(9, socks);
+            #endregion
+
+            #region Frog Jump with leaves spread on water, get the earliest time to start jumping
+            //int[] leaves = { 5, 3, 1, 4, 2, 3, 5, 4 };
+            //int[] leaves = { 1 };
+            //int resultWays = FrogJumpSolution.FrogJump(5, leaves);
+            #endregion
+
+            #region Ways of reaching a number with different combinations
+            //int resultWays = WaysToSumSolution.ways(5, 3);
+            #endregion
+
+            #region Count valleys
+            //string s = "UDDDUDUU";
+            string s = "DDUDDUUDUU";
+            int valley = CountingValleys.countingValleys(s.Length, s);
+            #endregion
+
 
             Console.ReadLine();
         }
