@@ -8,24 +8,28 @@ namespace Algorithms.Solutions
 {
     public class searching
     {
-        public static int BinarySearch(int[] inputArray, int x)
+        public static int BinarySearch(int[] arr, int key)
         {
 
-            /// { 2, 3, 4, 10, 40 }
-            int n = inputArray.Length;
-            int mid = n / 2;
-            int startIndex = 0;
+            int minNum = 0;
+            int maxNum = arr.Length - 1;
 
-            if(inputArray[mid] == x)
+            while (minNum <= maxNum)
             {
-                return mid;
+                int mid = (minNum + maxNum) / 2;
+                if (key == arr[mid])
+                {
+                    return key;
+                }
+                else if (key < arr[mid])
+                {
+                    maxNum = mid - 1;
+                }
+                else
+                {
+                    minNum = mid + 1;
+                }
             }
-
-            if (inputArray[mid] > x)
-               startIndex = mid + 1;
-
-            BinarySearch(inputArray, x);
-
             return -1;
         }
 

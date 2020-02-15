@@ -10,11 +10,6 @@ namespace Algorithms.Solutions
     {
         public static int[] SelectionSorting(int[] inputArray)
         {
-            //int[] lst = { 4, 9, 7, 1 };
-            //int[] val = Sorting.SelectionSorting(lst);
-            //Console.WriteLine(val);
-
-
             int n = inputArray.Length;
             for (int i = 0; i < n - 1; i++)
             {

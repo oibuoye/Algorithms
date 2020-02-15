@@ -8,12 +8,10 @@ namespace Algorithms.DynamicProgramming
 {
     public class MaxArraySum
     {
-
-        //int[] dif = { -2, 1, 3, -4, 5 };
-        //MaxArraySum.maxSubsetSum(dif);
-
         public static int maxSubsetSum(int[] arr)
         {
+            //int[] caseNum = { -2, 1, 1, 4, -1, 5 };
+
             int incl = arr[0];
             int excl = 0;
             int excl_new;

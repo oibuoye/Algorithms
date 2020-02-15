@@ -63,24 +63,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySearchTree\BinarySearchTree.cs" />
+    <Compile Include="BinarySearchTree\Node.cs" />
+    <Compile Include="BinarySearchTree\Solutions\CheckIsTreeSymmetric.cs" />
+    <Compile Include="BinarySearchTree\Solutions\LeftSkewedTree.cs" />
+    <Compile Include="BinarySearchTree\Solutions\TreeOperations.cs" />
+    <Compile Include="BinarySearchTree\Solutions\RightSkewedTree.cs" />
+    <Compile Include="DynamicProgramming\Abbreviation.cs" />
     <Compile Include="DynamicProgramming\ChangeCoin.cs" />
     <Compile Include="DynamicProgramming\CoinsChangeV2.cs" />
     <Compile Include="DynamicProgramming\CountSubsequencesofType.cs" />
+    <Compile Include="DynamicProgramming\LongestSubstring.cs" />
     <Compile Include="DynamicProgramming\MaxArraySum.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursion\SimpleRecursivePro.cs" />
     <Compile Include="Solutions\AdjacentElementsProduct.cs" />
     <Compile Include="Solutions\ArrayOperation.cs" />
+    <Compile Include="Solutions\chooseFlaskSolution.cs" />
+    <Compile Include="Solutions\countMeetingSolution.cs" />
     <Compile Include="Solutions\Dynamicprogramming.cs" />
     <Compile Include="Solutions\Fibonacci.cs" />
     <Compile Include="Solutions\FirstDigitNumber.cs" />
+    <Compile Include="Solutions\knapSackSolution.cs" />
+    <Compile Include="Solutions\LeadaLifeCalculateProfit.cs" />
     <Compile Include="Solutions\Leaderofthearray.cs" />
     <Compile Include="Solutions\MakeArrayConsecutive_MissingNumbers_.cs" />
-    <Compile Include="Solutions\MatrixTransposition.cs" />
-    <Compile Include="Solutions\others.cs" />
-    <Compile Include="Solutions\PossibleCharacter.cs" />
+    <Compile Include="Solutions\Palindrome.cs" />
     <Compile Include="Solutions\searching.cs" />
     <Compile Include="Solutions\Sorting.cs" />
+    <Compile Include="Solutions\TransactionStatement.cs" />
+    <Compile Include="Solutions\TwoSum.cs" />
     <Compile Include="Solutions\UglyNumbers.cs" />
     <Compile Include="Solutions\Utilities.cs" />
     <Compile Include="Startup.cs" />
@@ -92,5 +105,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

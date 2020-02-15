@@ -12,22 +12,50 @@ namespace Algorithms.DynamicProgramming
 
         //Note: Two subsequences are considered different if the set of array indexes picked for the 2 subsequences are different.
 
-        public static void GetSubsequentType(string s, int testCase)
+        public static int GetSubsequentType(string s)
         {
-            int minLength = 3;
-            int counter = 0;
-            int length = s.Length;
-            Dictionary<string, int> characters = new Dictionary<string, int>();
-            Dictionary<string, string> indexes = new Dictionary<string, string>();
-            characters.Add("a", 1);
-            characters.Add("b", 2);
-            characters.Add("c", 3);
+          return fun(s);
+        }
 
-            for(int i = 1; i < length; i++)
+        static int fun(string str)
+        {
+            int a = 0, b = 0, c = 0;
+            for (int i = 0; i < str.Length; i++)
             {
+                if (str[i] == 'a')
+                {
+                    a = 2 * a + 1;
+                }
+                else if (str[i] == 'b')
+                {
+                    b = 2 * b + a;
+                }
+                else if (str[i] == 'c')
+                {
+                    c = 2 * c + b;
+                }
+                else
+                    continue;
+            }
+            return c;
+        }
 
+        public static int CheckOccurrence(int[] arr, int n)
+        {
+            //int[] lst = { 2, 3, 4, 3, 2, 1 };
+            //int val = CountSubsequencesofType.CheckOccurrence(lst, 3);
+            //Console.WriteLine(val);
+
+            int counter = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == n)
+                {
+                    counter++;
+                }
             }
 
+            return counter;
         }
 
 

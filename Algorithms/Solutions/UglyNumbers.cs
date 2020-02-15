@@ -8,9 +8,6 @@ namespace Algorithms.Solutions
 {
     public class UglyNumbers
     {
-        //int result = UglyNumbers.FindNthUglyNumber(7);
-
-
         public static int FindNthUglyNumber(int n)
         {
             int counter = 1;
