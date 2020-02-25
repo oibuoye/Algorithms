@@ -32,7 +32,6 @@ namespace Algorithms.Solutions
             {
                 IsSedan = false;
                 seats = "4";
-                //this.getIsSedan();
             }
         }
 

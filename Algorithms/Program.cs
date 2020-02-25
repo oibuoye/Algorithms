@@ -710,12 +710,15 @@ namespace Algorithms
             //TestingAbstract.Car car;
 
             //car = new TestingAbstract.WagonR();
+            //car.getMileage();
             //Console.WriteLine($"Checking for Wagon::: {car.getIsSedan()}");
 
             //car = new TestingAbstract.InnovaCrysta();
+            //car.getMileage();
             //Console.WriteLine($"Checking for Innova Crysta::: {car.getIsSedan()}");
 
             //car = new TestingAbstract.HondaCity();
+            //car.getMileage();
             //Console.WriteLine($"Checking for Honda City::: {car.getIsSedan()}");
             #endregion
 
@@ -725,20 +728,42 @@ namespace Algorithms
             //int resultWays = SockMerchantSolution.sockMerchant(9, socks);
             #endregion
 
-            #region Frog Jump with leaves spread on water, get the earliest time to start jumping
+            #region Codility Frog Jump with leaves spread on water, get the earliest time to start jumping
             //int[] leaves = { 5, 3, 1, 4, 2, 3, 5, 4 };
             //int[] leaves = { 1 };
             //int resultWays = FrogJumpSolution.FrogJump(5, leaves);
             #endregion
 
-            #region Ways of reaching a number with different combinations
+            #region HackerRank Ways of reaching a number with different combinations
             //int resultWays = WaysToSumSolution.ways(5, 3);
             #endregion
 
-            #region Count valleys
+            #region HackerRank Count valleys
             //string s = "UDDDUDUU";
-            string s = "DDUDDUUDUU";
-            int valley = CountingValleys.countingValleys(s.Length, s);
+            //string s = "DDUDDUUDUU";
+            //int valley = CountingValleys.countingValleys(s.Length, s);
+            #endregion
+
+            #region HackerRank Electronic shop
+            //int[] drives = { 5, 2, 8 };
+            //int[] keyboards = { 3, 1 };
+            //int b = 10;
+            //int valley = ElectronicShop.getMoneySpent(keyboards, drives, b);
+            #endregion
+
+            #region LeetCode string compression
+            //Char[] chars = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' };
+            //Char[] chars = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            //Char[] chars = { 'a' };
+            //int strCom = StringCompression.Compress(chars);
+            #endregion
+
+            #region HackerRank Jumping clouds
+            //int[] clounds = { 0, 1, 0, 0, 0, 1, 0 };
+            //int[] clounds = { 0, 0, 0, 0, 1, 0 };
+            int[] clounds = { 0, 0, 0, 1, 0, 0 };
+            //int[] clounds = { 0, 0, 1, 0, 0, 1, 0 };
+            int jump = JumpingontheClouds.jumpingOnClouds(clounds);
             #endregion
 
 

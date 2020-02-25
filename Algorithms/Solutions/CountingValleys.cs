@@ -13,37 +13,34 @@ namespace Algorithms.Solutions
             int upHill = 0;
             int downHill = 0;
             int countValley = 0;
-            for(int i =0; i < s.Length - 2; i++)
+            bool hasTouchedDownHill = false;
+            for(int i =0; i < s.Length; i++)
             {
-                char getChar = s[i];
-                if(getChar == 'U')
+                if(s[i] == 'U')
                 {
                     upHill++;
-                    if((upHill - downHill) < 0)
+                    if((upHill - downHill) < 0 && hasTouchedDownHill == false)
                     {
                         //Valley
-                        //Check the next two move
-                        char getChar1 = s[i + 1];
-                        char getChar2 = s[i + 2];
-                        if (getChar1 == 'U' && getChar2 == 'D')
-                        {
-                            countValley++;
-                        }
+                        hasTouchedDownHill = true;
+                    }
+                    else if ((upHill - downHill) == 0 && hasTouchedDownHill == true)
+                    {
+                        hasTouchedDownHill = false;
+                        countValley++;
                     }
                 }
                 else
                 {
                     downHill++;
-                    if ((upHill - downHill) < 0)
+                    if ((upHill - downHill) < 0 && hasTouchedDownHill == false)
                     {
                         //Valley
-                        //Check the next two move
-                        char getChar1 = s[i + 1];
-                        char getChar2 = s[i + 2];
-                        if (getChar1 == 'U' && getChar2 == 'D')
-                        {
-                            countValley++;
-                        }
+                        hasTouchedDownHill = true;
+                    }else if((upHill - downHill) == 0 && hasTouchedDownHill == true)
+                    {
+                        hasTouchedDownHill = false;
+                        countValley++;
                     }
                 }
             }
