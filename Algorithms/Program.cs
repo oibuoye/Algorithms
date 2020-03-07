@@ -688,6 +688,7 @@ namespace Algorithms
 
             #region Longest substring without repeating characters
             //string wordTest = "abcbacagad";
+            //string wordTest = "abcbadc";
             //int maxL = LongestSubstring.longestSubstringCharacters(wordTest);
             #endregion
 
@@ -761,9 +762,48 @@ namespace Algorithms
             #region HackerRank Jumping clouds
             //int[] clounds = { 0, 1, 0, 0, 0, 1, 0 };
             //int[] clounds = { 0, 0, 0, 0, 1, 0 };
-            int[] clounds = { 0, 0, 0, 1, 0, 0 };
+            //int[] clounds = { 0, 0, 0, 1, 0, 0 };
             //int[] clounds = { 0, 0, 1, 0, 0, 1, 0 };
-            int jump = JumpingontheClouds.jumpingOnClouds(clounds);
+            //int jump = JumpingontheClouds.jumpingOnClouds(clounds);
+            #endregion
+
+            #region Meeting room
+            //int[,] rooms = { { 0, 4 }, { 5, 10 }, { 15, 20 } };
+            //bool attend = MeetingRoom.Meeting(rooms);
+
+            //int[,] rooms = { { 0, 30 }, { 15, 20 }, { 5, 10 } };
+            //int[,] rooms = { { 0, 30 }, { 15, 20 }, { 10, 14 }, { 5, 9 } };
+            //int[,] attend = MeetingRoom.SortMeeting(rooms);
+
+            //int[,] rooms = { { 0, 30 }, { 15, 20 }, { 5, 10 } };
+            //int[,] rooms = { { 0, 4 }, { 1, 3 }, { 5, 10 }, { 6, 9 }, { 15, 20 } };
+            //int extraRoomNeeded = MeetingRoom.MeetingExtraRoom(rooms);
+            #endregion
+
+            #region Meeting room
+            //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+            //int search = searching.BinarySearch(arr, 7);
+            #endregion
+
+            #region Change coins
+            //int[] arr = { 1, 2, 3};
+            //int resultWays = ChangeCoin.change(10, arr);
+            #endregion
+
+            #region Find Median of Sorted Arrays WIP
+            //int[] arr = { 1, 2, 3, 4, 9 };
+            //int[] arr2 = { 2, 6, 8, 10, 12 };
+            //double median = FindMedian.FindMedianSortedArrays(arr, arr2);
+            #endregion
+
+            #region Hurdle race with magic potion
+            //int[] arr = { 1, 6, 3, 5, 2 };
+            //int curHeight = 4;
+
+            //int[] arr = { 2, 5, 4, 5, 2 };
+            //int curHeight = 7;
+
+            //int minMagicPotion = HurdleRace.hurdleRace(curHeight, arr);
             #endregion
 
 
