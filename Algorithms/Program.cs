@@ -806,6 +806,39 @@ namespace Algorithms
             //int minMagicPotion = HurdleRace.hurdleRace(curHeight, arr);
             #endregion
 
+            #region Picking numbers
+            //var arr = new List<int>() { 1, 1, 2, 2, 4, 4, 5, 5, 5};
+            //var arr = new List<int>() { 4, 6, 5, 3, 3, 1 };
+
+            //var arr = new List<int>() { 66, 66, 66, 66, 66 };
+            //int max = PickingNumbers.pickingNumberReversed(arr);
+            #endregion
+
+            #region Frequency of characters e.g aabbbcd should give a2b3c1d1
+            //Char[] chars = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
+            //FrequencyofCharacters.Frequency(chars);
+            #endregion
+
+            #region Kth Largest number in an array
+            //int[] arr = { 1, 3, 5, 6, 7 };
+            //int max = KthLargestNumber.GetKthLargestNumber(arr, 8);
+            #endregion
+
+
+            #region Count triplets
+            //var arr = new List<int>() { 66, 66, 66, 66, 66 };
+            //var arr = new List<long>() { 1, 2, 2, 4 };
+            //var arr = new List<long>() { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+            //var arr = new List<long>() { 1, 1, 1, 1 };
+            //var arr = new List<long>() { 1, 3, 9, 9, 27, 81 };
+            var arr = new List<long>() { 3, 3, 9, 9, 27, 81 };
+            //var arr = new List<long>() { 1, 5, 5, 25, 125 };
+
+            //long val = CountTripletNumber.countTriplets(arr, 3);
+            long val = CountTripletNumber.CountTriplets(arr, 3);
+
+            #endregion
+
 
             Console.ReadLine();
         }
