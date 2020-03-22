@@ -8,51 +8,27 @@ namespace Algorithms.Solutions
 {
     public class Sorting
     {
-        public static int[] SelectionSorting(int[] inputArray)
+        public static int[] SelectionSorting(int[] arrayofNumbers)
         {
-            int n = inputArray.Length;
+            int n = arrayofNumbers.Length;
             for (int i = 0; i < n - 1; i++)
             {
                 for (int j = 0; j < n -1; j++)
                 {
-                    int temp = inputArray[j];
-                    if (inputArray[j] > inputArray[j + 1])
+                    int temp = arrayofNumbers[j];
+                    if (arrayofNumbers[j] > arrayofNumbers[j + 1])
                     {
-                        inputArray[j] = inputArray[j + 1];
-                        inputArray[j + 1] = temp;
+                        arrayofNumbers[j] = arrayofNumbers[j + 1];
+                        arrayofNumbers[j + 1] = temp;
                     }
                 }
             }
 
-            return inputArray;
+            return arrayofNumbers;
         }
 
-        public static void SelSorting(int[] lst)
+        public static int[] BubbleSort(int[] arrayofNumbers)
         {
-            // get the length
-            int n = lst.Length;
-            for (int i = 0; i < n; i++)
-            {
-                int index = 0;
-                int smallest = lst[i];
-                for (int j = i; j < n; j++)
-                {
-                    if (lst[j] < smallest)
-                    {
-                        smallest = lst[j];
-                        index = j;
-                    }
-                    int temp = lst[i];
-                    lst[i] = smallest;
-                    lst[index] = temp;
-                }
-            }
-            Console.WriteLine(lst);
-        }
-
-        public int[] BubbleSort()
-        {
-            int[] arrayofNumbers = { 5, 2, 1, 7, 9, 4 };
             bool IsSwapped;
 
             do
@@ -84,34 +60,31 @@ namespace Algorithms.Solutions
 
         }
         //Insertion sort
-        public void InsertionSort()
+        public static int[] InsertionSort(int[] arrayofNumbers)
         {
-            // Declare an integer array that is not sorted
-            int[] arr = { 6, 1, 2 };
-
             //Declare variable for the insertion value
             int newValue;
 
 
             // The outer loop allows us to iterate over the complete array that we will use for sorting
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 1; i < arrayofNumbers.Length; i++)
             {
-                newValue = arr[i];
+                newValue = arrayofNumbers[i];
 
                 // Also set the start of our inner loop to the same value as i
                 int j = i;
 
-                while (j > 0 && arr[j - 1] > newValue)
+                while (j > 0 && arrayofNumbers[j - 1] > newValue)
                 {
-                    arr[j] = arr[j - 1];
+                    arrayofNumbers[j] = arrayofNumbers[j - 1];
 
                     j--;
 
                 }
 
-                arr[j] = newValue;
-
+                arrayofNumbers[j] = newValue;
             }
+            return arrayofNumbers;
         }
 
     }

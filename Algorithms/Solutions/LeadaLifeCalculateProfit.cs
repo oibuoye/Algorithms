@@ -8,6 +8,7 @@ namespace Algorithms.Solutions
 {
     public class LeadaLifeCalculateProfit
     {
+        //WIP:::Not passing all the test cases
         public static int calculateProfit(int n, List<int> earning, List<int> cost, int e)
         {
             int profit = 0, energy = e;
@@ -18,66 +19,65 @@ namespace Algorithms.Solutions
                 {
                     if (energy > 0)
                     {
-                        profit += EarningAfterWork(i, earning, e);
-                        energy = 0;
-                    }
-                    else
-                    {
-                        //Eat then work
-                        profit -= EatingAfterWork(i, cost, e);
-                        energy += e;
-
-                        //then work
-                        profit += EarningAfterWork(i, earning, e);
-                        energy = 0;
+                        //Compare the earning of the previous day with current day
+                        //When the earning for previous day is less than cost of eating for the day
+                        //and earning for previous day is greater than earning for the current day
+                        if(EarningForTheDay(i -1, earning, e) <= EatingForTheDay(i -1, cost, e) && EarningForTheDay(i - 1, earning, e) > EarningForTheDay(i, earning, e))
+                        {
+                            profit += EarningForTheDay(i - 1, earning, e);
+                            energy = 0;
+                        }
+                        else
+                        {
+                            profit += EarningForTheDay(i, earning, e);
+                            energy = 0;
+                        }
                     }
                 }
                 else
                 {
-                    if (EarningAfterWork(i, earning, e) > EatingAfterWork(i, cost, e))
+                    if (EarningForTheDay(i, earning, e) > EatingForTheDay(i, cost, e) && energy !=0)
                     {
-                        //Work 
-                        profit += EarningAfterWork(i, earning, e);
-                        energy = 0;
-
-                        //Then eat
-                        profit -= EatingAfterWork(i, cost, e);
-                        energy += e;
-                    }
-                    else if (EarningAfterWork(i, earning, e) == EatingAfterWork(i, cost, e))
-                    {
-                        //Check the cost of eating
-                        if (earning[i] > earning[i + 1])
+                        if ((EatingForTheDay(i, cost, e) >= EatingForTheDay(i + 1, cost, e)) && (EarningForTheDay(i + 1, earning, e) <= EatingForTheDay(i + 1, cost, e)))
                         {
-                            //Work without eating on that day
-                            profit += EarningAfterWork(i, earning, e);
+                            //Work 
+                            profit += EarningForTheDay(i, earning, e);
                             energy = 0;
                         }
-                    }
-                    else
-                    {
-                        //Check if it better to eat today compare to the next day and next day is not the last day
-                        if (EatingAfterWork(i, cost, e) < EatingAfterWork(i + 1, cost, e))
+                        else
                         {
+                            //Work 
+                            profit += EarningForTheDay(i, earning, e);
+                            energy = 0;
+
                             //Then eat
-                            if (profit > EatingAfterWork(i, cost, e))
-                            {
-                                profit -= EatingAfterWork(i, cost, e);
-                                energy += e;
-                            }
+                            profit -= EatingForTheDay(i, cost, e);
+                            energy += e;
                         }
+                    }
+                    else if (((EarningForTheDay(i, earning, e) > EarningForTheDay(i + 1, earning, e)) && (EarningForTheDay(i, earning, e) >= EatingForTheDay(i + 1, cost, e)) && energy != 0))
+                    {
+                        //Work 
+                        profit += EarningForTheDay(i, earning, e);
+                        energy = 0;
+                    }
+                    else if ((energy == 0 && (EatingForTheDay(i, cost, e) < EatingForTheDay(i + 1, cost, e))) || (energy == 0 && EarningForTheDay(i + 1, earning, e) > EatingForTheDay(i + 1, cost, e)))
+                    {
+                        //Then eat
+                        profit -= EatingForTheDay(i, cost, e);
+                        energy += e;
                     }
                 }
             }
             return profit;
         }
 
-        static int EarningAfterWork(int day, List<int> earning, int e)
+        static int EarningForTheDay(int day, List<int> earning, int e)
         {
             return e * earning[day];
         }
 
-        static int EatingAfterWork(int day, List<int> cost, int e)
+        static int EatingForTheDay(int day, List<int> cost, int e)
         {
 
             return e * cost[day];

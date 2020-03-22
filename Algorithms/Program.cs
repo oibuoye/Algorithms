@@ -147,7 +147,7 @@ namespace Algorithms
             #endregion
 
             #region Count Meeting
-
+            //99627
             ////var arrival = new List<int>() { 1, 2, 2, 1 };
             ////var departure = new List<int>() { 1, 2, 2, 3 };
             //var arrival = new List<int>() { 1, 1, 2 };
@@ -156,10 +156,14 @@ namespace Algorithms
             ////var departure = new List<int>() { 3, 2, 1, 3, 3 };
             //var arrival = new List<int>() { 7, 7, 7 };
             //var departure = new List<int>() { 8, 11, 8 };
-            //var arrival = new List<int>() { 1, 1, 1 , 2};
+            //var arrival = new List<int>() { 1, 1, 1, 2 };
             //var departure = new List<int>() { 2, 2, 3, 3 };
+            //var arrival = new List<int>() { 10, 11, 12, 14,13, 10, 11, 15 , 15};
+            //var departure = new List<int>() { 13, 14, 15, 14, 15, 10, 11, 15 , 15};
+            //var arrival = new List<int>() { 1 };
+            //var departure = new List<int>() { 1000 };
 
-            //var resul2 = TransactionStatement.countMeetings(arrival, departure);
+            //var resul2 = countMeetingSolution.countMeetings(arrival, departure);
 
             #endregion
 
@@ -180,6 +184,25 @@ namespace Algorithms
             //marking.Add(f4);
             //marking.Add(f5);
             #endregion
+
+            #region Should return 0
+            var req = new List<int>() { 4, 6 };
+            int flaskType = 2;
+            var f1 = new List<int>() { 0, 6 };
+            var f2 = new List<int>() { 0, 7 };
+            var f3 = new List<int>() { 0, 10 };
+            var f4 = new List<int>() { 1, 4 };
+            var f5 = new List<int>() { 1, 10 };
+            var f6 = new List<int>() { 1, 11 };
+            var marking = new List<List<int>>();
+            marking.Add(f1);
+            marking.Add(f2);
+            marking.Add(f3);
+            marking.Add(f4);
+            marking.Add(f5);
+            marking.Add(f6);
+            #endregion
+
 
             #region Should return 1
             //var req = new List<int>() { 10, 15 };
@@ -615,7 +638,13 @@ namespace Algorithms
             //marking.Add(f173);
             #endregion
 
-            //var flask = TransactionStatement.chooseFlask(req, flaskType, marking);
+            //var flask = chooseFlaskSolution.chooseFlask(req, flaskType, marking);
+
+            //var flask2 = chooseFlaskSolution.chooseFlaskBackup(req, flaskType, marking);
+            var flask2 = chooseFlaskSolution.chooseFlaskBack2(req, flaskType, marking);
+
+            //int wastes;
+            //var flask1 = chooseFlaskSolution.chooseFlasks(req, flaskType, marking, out wastes);
 
             #endregion
 
@@ -656,7 +685,13 @@ namespace Algorithms
             ////40
             //int n = 3;
             //var earning = new List<int>() { 7, 2, 4 };
-            //var cost = new List<int>() { 7, 3, 6 };
+            //var cost = new List<int>()    { 7, 3, 6 };
+            //int e = 5;
+
+            ////40
+            //int n = 4;
+            //var earning = new List<int>() { 7, 2, 1, 4 };
+            //var cost = new List<int>() { 7, 3, 1, 6 };
             //int e = 5;
 
             ////36
@@ -665,13 +700,32 @@ namespace Algorithms
             //var cost = new List<int>() { 2, 1, 4 };
             //int e = 4;
 
-            ////340
+            //340
             //int n = 18;
             //var earning = new List<int>() { 9, 7, 9, 2, 7, 7, 9, 6, 7, 6, 6, 3, 4, 2, 8, 4, 6, 10 };
             //var cost = new List<int>()    { 4, 1, 1, 5, 2, 3, 3, 3, 2, 4, 4, 3, 3, 4, 4, 1, 2, 5 };
             //int e = 5;
 
-            //int result = TransactionStatement.calculateProfit(n, earning, cost, e);
+            //64860
+            //int n = 98;
+            //var earning = new List<int>() { 4, 2, 5, 3, 1, 5, 3, 1, 2, 5, 82, 18, 49, 99, 40, 39, 70, 25, 58, 7, 38, 36, 54, 50, 13, 27, 93, 100, 17, 72, 8, 60, 3, 99, 93, 4, 88, 80, 19, 60, 26, 100, 77, 26, 51, 68, 64, 72, 92, 73, 78, 81, 61, 84, 30, 73, 62, 74, 72, 79, 45, 31, 90, 48, 81, 82, 3, 69, 14, 73, 80, 91, 72, 8, 17, 74, 75, 80, 98, 18, 5, 27, 98, 65, 62, 79, 37, 24, 52, 60, 54, 1, 3, 3, 5, 5, 2, 2 };
+            //var cost = new List<int>() { 3, 2, 4, 4, 2, 3, 3, 3, 3, 2, 5, 5, 1, 4, 4, 3, 3, 5, 1, 1, 5, 2, 5, 3, 5, 4, 3, 4, 4, 1, 3, 3, 2, 3, 4, 3, 2, 1, 3, 5, 5, 2, 1, 5, 5, 4, 3, 2, 1, 5, 2, 5, 2, 3, 5, 3, 4, 2, 1, 2, 4, 3, 1, 5, 1, 4, 4, 2, 5, 1, 3, 4, 2, 1, 3, 1, 1, 2, 4, 1, 4, 5, 1, 5, 5, 5, 4, 3, 3, 4, 1, 1, 4, 1, 5, 1, 2, 3 };
+            //int e = 15;
+
+            //660
+            //int n = 11;
+            //var earning = new List<int>() { 9, 9, 10, 10, 1, 2, 1, 10, 2, 4, 2 };
+            //var cost = new List<int>() { 2, 4, 1, 1, 5, 1, 5, 1, 3, 5, 5 };
+            //int e = 15;
+
+            //10500
+            //int n = 48;
+            //var earning = new List<int>() { 5, 5, 5, 2, 3, 1, 2, 4, 3, 2, 50, 46, 32, 44, 24, 40, 15, 26, 8, 14, 6, 10, 8, 13, 26, 6, 22, 24, 40, 16, 31, 50, 12, 43, 13, 19, 33, 46, 7, 7, 33, 3, 2, 1, 4, 2, 2, 3 };
+            //var cost = new List<int>() { 4, 1, 1, 4, 5, 1, 3, 1, 3, 2, 4, 3, 2, 2, 4, 3, 4, 1, 3, 3, 4, 4, 1, 3, 4, 4, 3, 2, 1, 1, 1, 1, 4, 1, 2, 3, 3, 4, 5, 1, 5, 4, 5, 3, 2, 3, 5, 2 };
+            //int e = 15;
+
+            //int result = LeadaLifeCalculateProfit.calculateProfit(n, earning, cost, e);
+            //int result2 = LeadaLifeCalculateProfit.calculateProfitBackup(n, earning, cost, e);
             #endregion
 
             #region Fibonacci using DP
@@ -793,7 +847,12 @@ namespace Algorithms
             #region Find Median of Sorted Arrays WIP
             //int[] arr = { 1, 2, 3, 4, 9 };
             //int[] arr2 = { 2, 6, 8, 10, 12 };
-            //double median = FindMedian.FindMedianSortedArrays(arr, arr2);
+            //int[] arr = { 1, 3 };
+            //int[] arr2 = { 2};
+            //int[] arr = { 1, 2 };
+            //int[] arr2 = { 3, 4 };
+
+            //double median = new FindMedian().FindMedianSortedArrays(arr, arr2);
             #endregion
 
             #region Hurdle race with magic potion
@@ -824,19 +883,55 @@ namespace Algorithms
             //int max = KthLargestNumber.GetKthLargestNumber(arr, 8);
             #endregion
 
-
             #region Count triplets
             //var arr = new List<int>() { 66, 66, 66, 66, 66 };
             //var arr = new List<long>() { 1, 2, 2, 4 };
             //var arr = new List<long>() { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
             //var arr = new List<long>() { 1, 1, 1, 1 };
             //var arr = new List<long>() { 1, 3, 9, 9, 27, 81 };
-            var arr = new List<long>() { 3, 3, 9, 9, 27, 81 };
+            //var arr = new List<long>() { 3, 3, 9, 9, 27, 81 };
             //var arr = new List<long>() { 1, 5, 5, 25, 125 };
 
             //long val = CountTripletNumber.countTriplets(arr, 3);
-            long val = CountTripletNumber.CountTriplets(arr, 3);
+            //long val = CountTripletNumber.CountTriplets(arr, 3);
 
+            #endregion
+
+            #region Sorting: Bubble, Selection and Insertion
+            //int[] arr = { 2, 1 };
+            //int[] arr1 = { 2, 1 };
+            //int[] arr2 = { 2, 1 };
+
+            //int[] max = Sorting.SelectionSorting(arr);
+            //int[] max1 = Sorting.BubbleSort(arr1);
+            //int[] max2 = Sorting.InsertionSort(arr2);
+            #endregion
+
+            #region Compare triplets
+            //var a = new List<int>() { 66, 66, 66, 66, 66 };
+            //var b = new List<int>() { 1, 2, 2, 4 };
+
+            //List<int> val = CompareTriplets.CompareTripletsNum(a, b);
+            #endregion
+
+            #region Repeated strings
+            //string sVal = "aac";
+            //long n = 6;
+            //string sVal = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm";
+            //long n = 10;
+
+            //long val = RepeatedString.repeatedString(sVal, n);
+            #endregion
+
+            #region Nim game Leet code mock interview - Not passing all test
+            //int n = 4;
+            //bool val = NimGame.CanWinNim(n);
+            #endregion
+
+            #region Hamming Distance Leet code mock interview
+            //int x = 6;
+            //int y = 11;
+            //int val = HammingDistance.GetHammingDistance(x, y);
             #endregion
 
 

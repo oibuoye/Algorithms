@@ -28,29 +28,39 @@ namespace Algorithms.Solutions
 
         public class WagonR : Car
         {
-            public override void getMileage()
+            public WagonR()
             {
                 IsSedan = false;
                 seats = "4";
+            }
+            public override void getMileage()
+            {
+                //Milliage impl
             }
         }
 
         public class HondaCity : Car
         {
-            public override void getMileage()
+            public HondaCity()
             {
                 IsSedan = true;
                 seats = "4";
+            }
+            public override void getMileage()
+            {
                 //this.getIsSedan();
             }
         }
 
         public class InnovaCrysta : Car
         {
-            public override void getMileage()
+            public InnovaCrysta()
             {
                 IsSedan = false;
                 seats = "6";
+            }
+            public override void getMileage()
+            {
                 //this.getIsSedan();
             }
         }

@@ -10,6 +10,9 @@ namespace Algorithms.Solutions
     {
         public static int GetKthLargestNumber(int[] arr, int kth)
         {
+            //Find absolute distance d of the adjacent elements of the array and store in another array until difference of any two elements
+            // of the array produce a result that exist in the array
+            // then find the kth largest element in the new array
             int len = arr.Length;
             int maxNum = arr.Max();
             int[] newArr = new int[maxNum];

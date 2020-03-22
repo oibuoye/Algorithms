@@ -17,10 +17,8 @@ namespace Algorithms.DynamicProgramming
         public static int change(int amount, int[] v)
         {
             int[,] solution = new int[v.Length + 1, amount + 1];
-
             // if amount is 0, it willt return empty set to make the change
             // if no coins given, 0 ways to change the amount
-
             for (int i = 0; i <= v.Length; i++)
             {
                 solution[i,0] = 1;
@@ -42,8 +40,7 @@ namespace Algorithms.DynamicProgramming
                         // reduce the amount by coin value and
                         // use the subproblem solution (amount-v[i]) and
                         // add the solution from the top to it
-                        solution[i,j] = solution[i - 1,j]
-                                + solution[i,j - v[i - 1]];
+                        solution[i,j] = solution[i - 1,j] + solution[i,j - v[i - 1]];
                     }
                     else
                     {

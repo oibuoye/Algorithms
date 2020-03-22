@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,68 +9,145 @@ namespace Algorithms.Solutions
 {
     public class chooseFlaskSolution
     {
+        //WIP:::Needs to be optmised
         public static int chooseFlask(List<int> requirements, int flaskTypes, List<List<int>> markings)
         {
-            Dictionary<int, int> results = new Dictionary<int, int>();
-            Dictionary<int, int> tracker = new Dictionary<int, int>();
-            for (int k = 0; k < flaskTypes; k++)
-            {
-            }
-            for (int i = 0; i < requirements.Count; i++)
-            {
-                //Let each of the requirement go through the list of Flask markings to see the Flask best satisfied it.
-                for (int j = 0; j < markings.Count; j++)
-                {
-                    //Check if the index of the Flask marking exist in the tracker
-                    int satisfiedRequirementIndex = -1;
-                    bool hasValue = tracker.ContainsValue(markings[j][0]);
-                    if (hasValue)
-                    {
-                        //
-                        satisfiedRequirementIndex = markings[j][0];
+            int[] results = new int[flaskTypes];
+            int[] requirementMets = new int[flaskTypes];
+            int index = -1;
+            int requirementsLen = requirements.Count;
+            int previousLowestLoss = 0;
 
-                        //Check if the index i requirement has been satisfied for a particular index of Flask markings
-                        if (!(satisfiedRequirementIndex == i))
+            Dictionary<int, List<int>> flaskMarkings = new Dictionary<int, List<int>>();
+            for (int i = 0; i < flaskTypes; i++)
+            {
+                flaskMarkings.Add(i, new List<int>());
+            }
+
+            for (int i = 0; i < markings.Count; i++)
+            {
+                var key = markings[i][0];
+                var mark = markings[i][1];
+                flaskMarkings[key].Add(mark);
+            }
+
+            for(int i =0; i < flaskTypes; i++)
+            {
+                List<int> reqCopy = new List<int>(requirements);
+                var removeValues = new List<int>();
+                var marks = flaskMarkings[i];
+                for (int k = 0; k < marks.Count; k++)
+                {
+                    for (int j = 0; j < reqCopy.Count; j++)
+                    {
+                        if (reqCopy[j] <= marks[k])
                         {
-                            if (markings[j][1] >= requirements[i])
+                            requirementMets[i] += 1;
+                            results[i] += (marks[k] - reqCopy[j]);
+                            removeValues.Add(reqCopy[j]);
+                            if (requirementMets[i] == requirementsLen && index == -1)
                             {
-                                tracker[markings[j][0]] = satisfiedRequirementIndex + 1; //Increase the index of satisfied requirement
-                                results[markings[j][0]] += (markings[j][1] - requirements[i]); //Increase loss value in the result
+                                index = i;
+                                previousLowestLoss = results[i];
+                                break;
+                            }
+                            else if (requirementMets[i] == requirementsLen && index != -1)
+                            {
+                                index = previousLowestLoss != 0 && previousLowestLoss <= results[i] ? index : i;
+                                previousLowestLoss = previousLowestLoss <= results[i] ? previousLowestLoss : results[i];
+                                break;
                             }
                         }
                     }
-                    else
+                    reqCopy.RemoveAll(x => removeValues.Contains(x));
+                    if(reqCopy.Count == 0)
                     {
-                        //Index of the marking item does not exist in the tracker
-                        //Compare the value of the marking Flask with the requirement
-                        if (markings[j][1] >= requirements[i])
+                        break;
+                    }
+                }
+            }
+            return index;
+        }
+
+        public static int chooseFlaskImpl2(List<int> requirements, int flaskTypes, List<List<int>> markings)
+        {
+            int[] results = new int[flaskTypes];
+            int[] requirementMets = new int[flaskTypes];
+            int index = -1;
+            int requirementsLen = requirements.Count;
+            int previousLowestLoss = 0;
+
+            for (int i = 0; i < requirementsLen; i++)
+            {
+                int[] statusTracker = new int[flaskTypes];
+                for (int j = 0; j < markings.Count; j++)
+                {
+                    int currentIndex = markings[j][0];
+                    if (requirements[i] <= markings[j][1] && statusTracker[currentIndex] == 0)
+                    {
+                        statusTracker[currentIndex] = 1;
+                        requirementMets[currentIndex] += 1;
+                        results[currentIndex] += markings[j][1] - requirements[i];
+                        if (requirementMets[currentIndex] == requirementsLen)
                         {
-                            tracker[markings[j][0]] = 0; //Add index of satisfied requirement into the tracker
-                            results[markings[j][0]] = (markings[j][1] - requirements[i]); //Add loss into the result
+                            if (index == -1)
+                            {
+                                index = currentIndex;
+                                previousLowestLoss = results[currentIndex];
+                            }
+                            else
+                            {
+                                index = previousLowestLoss != 0 && previousLowestLoss <= results[currentIndex] ? index : currentIndex;
+                                previousLowestLoss = previousLowestLoss <= results[currentIndex] ? previousLowestLoss : results[currentIndex];
+                            }
                         }
                     }
                 }
             }
+            return index;
+        }
 
-            ////Get the index with least value in the dictionary
-            //int returnIndex = results.Aggregate((l, r) => l.Value <= r.Value ? l : r).Key;
-            int index = -1, previousLoss = 0, requiresMet = 0;
+        public static int chooseFlaskImpl3(List<int> requirements, int flaskTypes, List<List<int>> markings)
+        {
+            int[] results = new int[flaskTypes];
+            int[] requirementMets = new int[flaskTypes];
+            int index = -1;
+            int requirementsLen = requirements.Count;
+            int previousLowestLoss = 0;
+
+            for (int i = 0; i < requirementsLen; i++)
+            {
+                int[] statusTracker = new int[flaskTypes];
+                for (int j = 0; j < markings.Count; j++)
+                {
+                    int currentIndex = markings[j][0];
+                    int mark = markings[j][1];
+                    int requirement = requirements[i];
+                    if (requirement <= mark && statusTracker[currentIndex] == 0)
+                    {
+                        statusTracker[currentIndex] = 1;
+                        requirementMets[currentIndex] += 1;
+                        results[currentIndex] += mark - requirement;
+                    }
+
+                    if (statusTracker[flaskTypes - 1] == 1)
+                    {
+                        break;
+                    }
+                }
+            }
+
             for (int k = 0; k < flaskTypes; k++)
             {
-                bool hasValue = tracker.TryGetValue(k, out requiresMet);
-                if (hasValue && ((requiresMet + 1) == requirements.Count))
+                if (requirementMets[k] == requirementsLen && index == -1)
                 {
-                    int currentLoss = results[k];
-                    if (index == -1)
-                    {
-                        index = k;
-                        previousLoss = currentLoss;
-                    }
-                    else
-                    {
-                        index = currentLoss < previousLoss ? k : index;
-                        previousLoss = currentLoss < previousLoss ? currentLoss : previousLoss;
-                    }
+                    index = k;
+                    previousLowestLoss = results[k];
+                }
+                else if (requirementMets[k] == requirementsLen && index != -1)
+                {
+                    index = previousLowestLoss != 0 && previousLowestLoss <= results[k] ? index : k;
+                    previousLowestLoss = previousLowestLoss <= results[k] ? previousLowestLoss : results[k];
                 }
             }
             return index;
