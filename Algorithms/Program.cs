@@ -3,8 +3,6 @@ using Algorithms.BinarySearchTree.Solutions;
 using Algorithms.DynamicProgramming;
 using Algorithms.Recursion;
 using Algorithms.Solutions;
-using Hangfire;
-using Hangfire.SqlServer;
 using Microsoft.Owin.Hosting;
 using System;
 using System.Collections.Generic;
@@ -186,21 +184,21 @@ namespace Algorithms
             #endregion
 
             #region Should return 0
-            var req = new List<int>() { 4, 6 };
-            int flaskType = 2;
-            var f1 = new List<int>() { 0, 6 };
-            var f2 = new List<int>() { 0, 7 };
-            var f3 = new List<int>() { 0, 10 };
-            var f4 = new List<int>() { 1, 4 };
-            var f5 = new List<int>() { 1, 10 };
-            var f6 = new List<int>() { 1, 11 };
-            var marking = new List<List<int>>();
-            marking.Add(f1);
-            marking.Add(f2);
-            marking.Add(f3);
-            marking.Add(f4);
-            marking.Add(f5);
-            marking.Add(f6);
+            //var req = new List<int>() { 4, 6 };
+            //int flaskType = 2;
+            //var f1 = new List<int>() { 0, 6 };
+            //var f2 = new List<int>() { 0, 7 };
+            //var f3 = new List<int>() { 0, 10 };
+            //var f4 = new List<int>() { 1, 4 };
+            //var f5 = new List<int>() { 1, 10 };
+            //var f6 = new List<int>() { 1, 11 };
+            //var marking = new List<List<int>>();
+            //marking.Add(f1);
+            //marking.Add(f2);
+            //marking.Add(f3);
+            //marking.Add(f4);
+            //marking.Add(f5);
+            //marking.Add(f6);
             #endregion
 
 
@@ -641,10 +639,7 @@ namespace Algorithms
             //var flask = chooseFlaskSolution.chooseFlask(req, flaskType, marking);
 
             //var flask2 = chooseFlaskSolution.chooseFlaskBackup(req, flaskType, marking);
-            var flask2 = chooseFlaskSolution.chooseFlaskBack2(req, flaskType, marking);
-
-            //int wastes;
-            //var flask1 = chooseFlaskSolution.chooseFlasks(req, flaskType, marking, out wastes);
+            //var flask2 = chooseFlaskSolution.chooseFlaskBack2(req, flaskType, marking);
 
             #endregion
 
@@ -933,7 +928,6 @@ namespace Algorithms
             //int y = 11;
             //int val = HammingDistance.GetHammingDistance(x, y);
             #endregion
-
 
             Console.ReadLine();
         }

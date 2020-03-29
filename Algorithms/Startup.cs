@@ -1,5 +1,4 @@
-﻿using Hangfire;
-using Owin;
+﻿using Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +11,6 @@ namespace Algorithms
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseHangfireDashboard();
         }
     }
 }

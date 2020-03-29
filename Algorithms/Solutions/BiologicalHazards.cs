@@ -1,5 +1,4 @@
-﻿using Hangfire;
-using Microsoft.Owin.Hosting;
+﻿using Microsoft.Owin.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
