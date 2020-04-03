@@ -9,10 +9,10 @@ namespace Algorithms.LinkedList
     public class LinkedList
     {
         //LinkedList examples
-        internal class Node
+        public class Node
         {
-            internal int data;
-            internal Node next;
+            public int data;
+            public Node next;
             public Node(int d)
             {
                 data = d;
@@ -20,9 +20,46 @@ namespace Algorithms.LinkedList
             }
         }
         //Instantiate the linkedlist
-        internal class SingleLinkedList
+        public class SingleLinkedList
         {
-            internal Node head;
+            public Node head;
+            StringBuilder sb = new StringBuilder();
+
+            public SingleLinkedList()
+            {
+                head = null;
+            }
+
+            public string Transversal(Node head)
+            {
+                if (head == null)
+                {
+                    return sb.ToString();
+                }
+                else
+                {
+                    sb.Append(head.data.ToString());
+                    if (head.next != null)
+                    {
+                        Transversal(head.next);
+                    }
+                }
+                return sb.ToString();
+            }
+
+            public void AddToBegining(int value)
+            {
+                if (head == null)
+                {
+                    head = new Node(value);
+                }
+                else
+                {
+                    Node temp = new Node(value);
+                    temp.next = head;
+                    head = temp;
+                }
+            }
         }
         private void InsertFrontData(SingleLinkedList singleLink, int mydata)
         {

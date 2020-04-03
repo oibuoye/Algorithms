@@ -1,7 +1,9 @@
 ﻿using Algorithms.BinarySearchTree;
 using Algorithms.BinarySearchTree.Solutions;
 using Algorithms.DynamicProgramming;
-using Algorithms.Recursion;
+using Algorithms.Leetcodechallenge.Day01;
+using Algorithms.Leetcodechallenge.Day02;
+using Algorithms.Leetcodechallenge.Day03;
 using Algorithms.Solutions;
 using Microsoft.Owin.Hosting;
 using System;
@@ -13,6 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static Algorithms.LinkedList.LinkedList;
 
 namespace Algorithms
 {
@@ -35,7 +38,7 @@ namespace Algorithms
 
             #region MaxArraySum: Find the subset of non-adjacent elements with the maximum sum
             //int[] dif = { -2, 1, 3, -4, 5, 8, 9 };
-            ////int[] dif = { -2, 1, 1, 4, -1, 5 };
+            //int[] dif = { -2, 1, 1, 4, -1, 5 };
             //int maxResult = MaxArraySum.maxSubsetSum(dif);
             #endregion
 
@@ -927,6 +930,38 @@ namespace Algorithms
             //int x = 6;
             //int y = 11;
             //int val = HammingDistance.GetHammingDistance(x, y);
+            #endregion
+
+            #region Linkedlist Add two numbers
+
+            //SingleLinkedList node1 = new SingleLinkedList();
+            //node1.AddToBegining(3);
+            //node1.AddToBegining(4);
+            //node1.AddToBegining(2);
+
+            //SingleLinkedList node2 = new SingleLinkedList();
+            //node2.AddToBegining(4);
+            //node2.AddToBegining(6);
+            //node2.AddToBegining(5);
+
+            //var result = LinkedList.Solutions.AddTwoNumbers.Add(node1.head, node2.head);
+
+            #endregion
+
+            #region Single number solution
+            //int[] test1 = { 2, 2, 1 };
+            //int[] test2 = { 4, 1, 2, 1, 2 };
+            //int[] test1 = { 2, 2, 3, 1, 3 };
+            //int result = SingleNumberSolution.SingleNumberSol2(test2);
+            #endregion
+
+            #region Happy number solution
+            //bool result = HappyNumberSolution.IsHappy(19);
+            #endregion
+
+            #region Maximum Subset Array solution
+            //int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            //int maxResult = MaximumSubarraySolution.maxSubsetArray(arr);
             #endregion
 
             Console.ReadLine();

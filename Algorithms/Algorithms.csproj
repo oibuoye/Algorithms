@@ -70,10 +70,12 @@
     <Compile Include="DynamicProgramming\CountSubsequencesofType.cs" />
     <Compile Include="DynamicProgramming\LongestSubstring.cs" />
     <Compile Include="DynamicProgramming\MaxArraySum.cs" />
+    <Compile Include="Leetcodechallenge\Day02\HappyNumberSolution.cs" />
+    <Compile Include="Leetcodechallenge\Day03\MaximumSubarraySolution.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
+    <Compile Include="LinkedList\Solutions\AddTwoNumbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Recursion\SimpleRecursivePro.cs" />
     <Compile Include="Solutions\AdjacentElementsProduct.cs" />
     <Compile Include="Solutions\Anagram.cs" />
     <Compile Include="Solutions\ArrayOperation.cs" />
@@ -106,9 +108,9 @@
     <Compile Include="Solutions\NimGame.cs" />
     <Compile Include="Solutions\Palindrome.cs" />
     <Compile Include="Solutions\PickingNumbers.cs" />
-    <Compile Include="Solutions\PrimeNumber.cs" />
     <Compile Include="Solutions\RepeatedString.cs" />
     <Compile Include="Solutions\searching.cs" />
+    <Compile Include="Leetcodechallenge\Day01\SingleNumberSolution.cs" />
     <Compile Include="Solutions\SockMerchantSolution.cs" />
     <Compile Include="Solutions\Sorting.cs" />
     <Compile Include="Solutions\StringCompression.cs" />
@@ -129,6 +131,8 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="WIP\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
