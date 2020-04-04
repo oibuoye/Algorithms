@@ -4,6 +4,7 @@ using Algorithms.DynamicProgramming;
 using Algorithms.Leetcodechallenge.Day01;
 using Algorithms.Leetcodechallenge.Day02;
 using Algorithms.Leetcodechallenge.Day03;
+using Algorithms.Leetcodechallenge.Day04;
 using Algorithms.Solutions;
 using Microsoft.Owin.Hosting;
 using System;
@@ -963,6 +964,13 @@ namespace Algorithms
             //int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
             //int maxResult = MaximumSubarraySolution.maxSubsetArray(arr);
             #endregion
+
+            #region Move zeroes solution
+            int[] arr = { 0, 0, 1 };
+            //int[] arr = { 0, 1, 0, 3, 12 };
+            MoveZeroesSolution.MoveZeroes(arr);
+            #endregion
+
 
             Console.ReadLine();
         }
