@@ -5,6 +5,7 @@ using Algorithms.Leetcodechallenge.Day01;
 using Algorithms.Leetcodechallenge.Day02;
 using Algorithms.Leetcodechallenge.Day03;
 using Algorithms.Leetcodechallenge.Day04;
+using Algorithms.Leetcodechallenge.Day05;
 using Algorithms.Solutions;
 using Microsoft.Owin.Hosting;
 using System;
@@ -966,11 +967,17 @@ namespace Algorithms
             #endregion
 
             #region Move zeroes solution
-            int[] arr = { 0, 0, 1 };
-            //int[] arr = { 0, 1, 0, 3, 12 };
-            MoveZeroesSolution.MoveZeroes(arr);
+            //int[] arr = { 0, 0, 1 };
+            ////int[] arr = { 0, 1, 0, 3, 12 };
+            //MoveZeroesSolution.MoveZeroes(arr);
             #endregion
 
+            #region Buy and sell stocks
+            int[] arr = { 7, 1, 5, 3, 6, 4 };
+            //int[] arr = { 1, 2, 3, 4, 5 };
+            //int[] arr = { 7, 6, 4, 3, 1 };
+            int result = BestTimetoBuyandSellStock.MaxProfit(arr);
+            #endregion
 
             Console.ReadLine();
         }

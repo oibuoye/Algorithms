@@ -73,6 +73,7 @@
     <Compile Include="Leetcodechallenge\Day02\HappyNumberSolution.cs" />
     <Compile Include="Leetcodechallenge\Day03\MaximumSubarraySolution.cs" />
     <Compile Include="Leetcodechallenge\Day04\MoveZeroesSolution.cs" />
+    <Compile Include="Leetcodechallenge\Day05\BestTimetoBuyandSellStock.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
     <Compile Include="LinkedList\Solutions\AddTwoNumbers.cs" />
     <Compile Include="Program.cs" />
