@@ -6,6 +6,7 @@ using Algorithms.Leetcodechallenge.Day02;
 using Algorithms.Leetcodechallenge.Day03;
 using Algorithms.Leetcodechallenge.Day04;
 using Algorithms.Leetcodechallenge.Day05;
+using Algorithms.Leetcodechallenge.Day06;
 using Algorithms.Solutions;
 using Microsoft.Owin.Hosting;
 using System;
@@ -973,11 +974,18 @@ namespace Algorithms
             #endregion
 
             #region Buy and sell stocks
-            int[] arr = { 7, 1, 5, 3, 6, 4 };
+            //int[] arr = { 7, 1, 5, 3, 6, 4 };
             //int[] arr = { 1, 2, 3, 4, 5 };
             //int[] arr = { 7, 6, 4, 3, 1 };
-            int result = BestTimetoBuyandSellStock.MaxProfit(arr);
+            //int result = BestTimetoBuyandSellStock.MaxProfit(arr);
             #endregion
+
+
+            #region Group Anagrams
+            //string[] arr = { "eat", "tea", "tan", "ate", "nat", "bat" };
+            //var result = GroupAnagramsSolution.GroupAnagrams(arr);
+            #endregion
+
 
             Console.ReadLine();
         }
