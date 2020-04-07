@@ -14,3 +14,5 @@
 **DAY 05**: [Question: Best Time to Buy and Sell Stock](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3287/) =>>>      [Solutions](https://github.com/oibuoye/Algorithms/tree/master/Algorithms/Leetcodechallenge/Day05)
 
 **DAY 06**: [Question: Group Anagrams](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3288/) =>>>      [Solutions](https://github.com/oibuoye/Algorithms/tree/master/Algorithms/Leetcodechallenge/Day06)
+
+**DAY 07**: [Question: Counting Elements](https://leetcode.com/explore/featured/card/30-day-leetcoding-challenge/528/week-1/3289/) =>>>      [Solutions](https://github.com/oibuoye/Algorithms/tree/master/Algorithms/Leetcodechallenge/Day07)
