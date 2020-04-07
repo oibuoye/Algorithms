@@ -75,6 +75,7 @@
     <Compile Include="Leetcodechallenge\Day04\MoveZeroesSolution.cs" />
     <Compile Include="Leetcodechallenge\Day05\BestTimetoBuyandSellStock.cs" />
     <Compile Include="Leetcodechallenge\Day06\GroupAnagramsSolution.cs" />
+    <Compile Include="Leetcodechallenge\Day07\CountingElementsSolution.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
     <Compile Include="LinkedList\Solutions\AddTwoNumbers.cs" />
     <Compile Include="Program.cs" />

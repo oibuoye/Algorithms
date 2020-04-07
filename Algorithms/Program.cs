@@ -7,6 +7,7 @@ using Algorithms.Leetcodechallenge.Day03;
 using Algorithms.Leetcodechallenge.Day04;
 using Algorithms.Leetcodechallenge.Day05;
 using Algorithms.Leetcodechallenge.Day06;
+using Algorithms.Leetcodechallenge.Day07;
 using Algorithms.Solutions;
 using Microsoft.Owin.Hosting;
 using System;
@@ -980,10 +981,17 @@ namespace Algorithms
             //int result = BestTimetoBuyandSellStock.MaxProfit(arr);
             #endregion
 
-
             #region Group Anagrams
             //string[] arr = { "eat", "tea", "tan", "ate", "nat", "bat" };
             //var result = GroupAnagramsSolution.GroupAnagrams(arr);
+            #endregion
+
+            #region Counting Elements
+            //int[] arr = { 1000, 2, 3 };
+            //int[] arr = { 1, 1, 2, 2 };
+            //int[] arr = { 1, 1, 3, 3, 5, 5, 7, 7 };
+            //int[] arr = { 1, 3, 2, 3, 5, 0 };
+            //int result = CountingElementsSolution.CountElements(arr);
             #endregion
 
 
