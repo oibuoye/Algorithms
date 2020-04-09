@@ -76,6 +76,8 @@
     <Compile Include="Leetcodechallenge\Day05\BestTimetoBuyandSellStock.cs" />
     <Compile Include="Leetcodechallenge\Day06\GroupAnagramsSolution.cs" />
     <Compile Include="Leetcodechallenge\Day07\CountingElementsSolution.cs" />
+    <Compile Include="Leetcodechallenge\Day08\MiddleNodeSolution.cs" />
+    <Compile Include="Leetcodechallenge\Day09\BackspaceStringCompare.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
     <Compile Include="LinkedList\Solutions\AddTwoNumbers.cs" />
     <Compile Include="Program.cs" />

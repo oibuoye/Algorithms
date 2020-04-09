@@ -19,7 +19,8 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using static Algorithms.LinkedList.LinkedList;
+//using static Algorithms.LinkedList.LinkedList;
+using Algorithms.Leetcodechallenge.Day08;
 
 namespace Algorithms
 {
@@ -994,6 +995,26 @@ namespace Algorithms
             //int result = CountingElementsSolution.CountElements(arr);
             #endregion
 
+            #region Middle Node
+
+            SingleLinkedList node = new SingleLinkedList();
+
+            node.head = node.AddToEnd(node.head, 1);
+            node.head = node.AddToEnd(node.head, 2);
+            node.head = node.AddToEnd(node.head, 3);
+            node.head = node.AddToEnd(node.head, 4);
+            node.head = node.AddToEnd(node.head, 5);
+
+            //node.head = node.AddToEnd(node.head, 1);
+            //node.head = node.AddToEnd(node.head, 2);
+            //node.head = node.AddToEnd(node.head, 3);
+            //node.head = node.AddToEnd(node.head, 4);
+            //node.head = node.AddToEnd(node.head, 5);
+            //node.head = node.AddToEnd(node.head, 6);
+
+            var result = new MiddleNodeSolution().CountElements(node.head);
+
+            #endregion
 
             Console.ReadLine();
         }
