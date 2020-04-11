@@ -21,6 +21,8 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 //using static Algorithms.LinkedList.LinkedList;
 using Algorithms.Leetcodechallenge.Day08;
+using Algorithms.Leetcodechallenge.Day09;
+using Algorithms.Leetcodechallenge.Day10;
 
 namespace Algorithms
 {
@@ -997,13 +999,13 @@ namespace Algorithms
 
             #region Middle Node
 
-            SingleLinkedList node = new SingleLinkedList();
+            //SingleLinkedList node = new SingleLinkedList();
 
-            node.head = node.AddToEnd(node.head, 1);
-            node.head = node.AddToEnd(node.head, 2);
-            node.head = node.AddToEnd(node.head, 3);
-            node.head = node.AddToEnd(node.head, 4);
-            node.head = node.AddToEnd(node.head, 5);
+            //node.head = node.AddToEnd(node.head, 1);
+            //node.head = node.AddToEnd(node.head, 2);
+            //node.head = node.AddToEnd(node.head, 3);
+            //node.head = node.AddToEnd(node.head, 4);
+            //node.head = node.AddToEnd(node.head, 5);
 
             //node.head = node.AddToEnd(node.head, 1);
             //node.head = node.AddToEnd(node.head, 2);
@@ -1012,10 +1014,32 @@ namespace Algorithms
             //node.head = node.AddToEnd(node.head, 5);
             //node.head = node.AddToEnd(node.head, 6);
 
-            var result = new MiddleNodeSolution().CountElements(node.head);
+            //var result = new MiddleNodeSolution().CountElements(node.head);
 
             #endregion
 
+            #region Group Anagrams
+            //string S = "ab#c";
+            //string T = "ad#c";
+            //string S = "ab##";
+            //string T = "c#d#";
+            //string S = "a##c";
+            //string T = "#a#c";
+            //string S = "a#c";
+            //string T = "b";
+            //var result = BackspaceStringCompare.BackspaceCompare(S,T);
+            #endregion
+
+            #region Mini stack
+            MinStack minStack = new MinStack();
+            minStack.Push(-2);
+            minStack.Push(0);
+            minStack.Push(-3);
+            int result = minStack.GetMin(); //--> Returns - 3.
+            minStack.Pop();
+            int result2 = minStack.Top(); //--> Returns 0.
+            int result3 = minStack.GetMin(); //--> Returns - 2.
+            #endregion
             Console.ReadLine();
         }
     }

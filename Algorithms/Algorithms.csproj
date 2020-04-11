@@ -78,6 +78,7 @@
     <Compile Include="Leetcodechallenge\Day07\CountingElementsSolution.cs" />
     <Compile Include="Leetcodechallenge\Day08\MiddleNodeSolution.cs" />
     <Compile Include="Leetcodechallenge\Day09\BackspaceStringCompare.cs" />
+    <Compile Include="Leetcodechallenge\Day10\MinStack.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
     <Compile Include="LinkedList\Solutions\AddTwoNumbers.cs" />
     <Compile Include="Program.cs" />
