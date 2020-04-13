@@ -29,11 +29,11 @@ namespace Algorithms.BinarySearchTree.Solutions
 
         public void Tranverse(Node root)
         {
-            if (root == null)
-                return;
-
-            Tranverse(root.left);
-            Tranverse(root.right);
+            while(root != null)
+            {
+                Tranverse(root.left);
+                Tranverse(root.right);
+            }
         }
     }
 }

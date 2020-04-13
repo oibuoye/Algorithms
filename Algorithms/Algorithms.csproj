@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinarySearchTree\BinarySearchTree.cs" />
-    <Compile Include="BinarySearchTree\Node.cs" />
     <Compile Include="BinarySearchTree\Solutions\CheckIsTreeSymmetric.cs" />
     <Compile Include="BinarySearchTree\Solutions\LeftSkewedTree.cs" />
     <Compile Include="BinarySearchTree\Solutions\TreeOperations.cs" />
@@ -79,6 +78,8 @@
     <Compile Include="Leetcodechallenge\Day08\MiddleNodeSolution.cs" />
     <Compile Include="Leetcodechallenge\Day09\BackspaceStringCompare.cs" />
     <Compile Include="Leetcodechallenge\Day10\MinStack.cs" />
+    <Compile Include="Leetcodechallenge\Day11\DiameterofBinaryTree.cs" />
+    <Compile Include="Leetcodechallenge\Day12\LastStoneWeightSolution.cs" />
     <Compile Include="LinkedList\LinkedList.cs" />
     <Compile Include="LinkedList\Solutions\AddTwoNumbers.cs" />
     <Compile Include="Program.cs" />

@@ -16,6 +16,12 @@ namespace Algorithms.BinarySearchTree
 
             return node;
         }
-
     }
+
+    public class Node
+    {
+        public int? value;
+        public Node left, right;
+    }
+
 }

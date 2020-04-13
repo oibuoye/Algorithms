@@ -23,7 +23,6 @@ namespace Algorithms.LinkedList
         public class SingleLinkedList
         {
             public Node head;
-            StringBuilder sb = new StringBuilder();
 
             public SingleLinkedList()
             {
@@ -32,17 +31,11 @@ namespace Algorithms.LinkedList
 
             public string Transversal(Node head)
             {
-                if (head == null)
-                {
-                    return sb.ToString();
-                }
-                else
+                StringBuilder sb = new StringBuilder();
+                while (head != null)
                 {
                     sb.Append(head.data.ToString());
-                    if (head.next != null)
-                    {
-                        Transversal(head.next);
-                    }
+                    head = head.next;
                 }
                 return sb.ToString();
             }
@@ -60,6 +53,30 @@ namespace Algorithms.LinkedList
                     head = temp;
                 }
             }
+
+            public void AddToEnd(int value)
+            {
+                if (head == null)
+                {
+                    head = new Node(value);
+                }
+                else
+                {
+                    Node node = new Node(value);
+                    Node lastNode = GetLastNode(head);
+                    lastNode.next = node;
+                }
+            }
+
+            public Node GetLastNode(Node head)
+            {
+                while (head.next != null)
+                {
+                    head = head.next;
+                }
+                return head;
+            }
+
         }
         private void InsertFrontData(SingleLinkedList singleLink, int mydata)
         {

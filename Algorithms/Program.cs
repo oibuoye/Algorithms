@@ -23,6 +23,8 @@ using System.Threading.Tasks;
 using Algorithms.Leetcodechallenge.Day08;
 using Algorithms.Leetcodechallenge.Day09;
 using Algorithms.Leetcodechallenge.Day10;
+using Algorithms.Leetcodechallenge.Day11;
+using Algorithms.Leetcodechallenge.Day12;
 
 namespace Algorithms
 {
@@ -941,14 +943,24 @@ namespace Algorithms
 
             #region Linkedlist Add two numbers
 
-            //SingleLinkedList node1 = new SingleLinkedList();
+            //LinkedList.LinkedList.SingleLinkedList node1 = new LinkedList.LinkedList.SingleLinkedList();
             //node1.AddToBegining(3);
             //node1.AddToBegining(4);
             //node1.AddToBegining(2);
 
-            //SingleLinkedList node2 = new SingleLinkedList();
+            //node1.AddToBegining(8);
+            //node1.AddToBegining(1);
+
+            //node1.AddToBegining(5);
+
+
+            //LinkedList.LinkedList.SingleLinkedList node2 = new LinkedList.LinkedList.SingleLinkedList();
             //node2.AddToBegining(4);
             //node2.AddToBegining(6);
+            //node2.AddToBegining(5);
+
+            //node2.AddToBegining(0);
+
             //node2.AddToBegining(5);
 
             //var result = LinkedList.Solutions.AddTwoNumbers.Add(node1.head, node2.head);
@@ -1031,15 +1043,44 @@ namespace Algorithms
             #endregion
 
             #region Mini stack
-            MinStack minStack = new MinStack();
-            minStack.Push(-2);
-            minStack.Push(0);
-            minStack.Push(-3);
-            int result = minStack.GetMin(); //--> Returns - 3.
-            minStack.Pop();
-            int result2 = minStack.Top(); //--> Returns 0.
-            int result3 = minStack.GetMin(); //--> Returns - 2.
+            //MinStack minStack = new MinStack();
+            //minStack.Push(-2);
+            //minStack.Push(0);
+            //minStack.Push(-3);
+            //int result = minStack.GetMin(); //--> Returns - 3.
+            //minStack.Pop();
+            //int result2 = minStack.Top(); //--> Returns 0.
+            //int result3 = minStack.GetMin(); //--> Returns - 2.
             #endregion
+
+            #region Diameter of Binary Tree
+            TreeNode tree = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(1);
+            tree.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(2);
+            tree.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(3);
+            tree.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
+            tree.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+
+            //tree.left.right.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(6);
+            //tree.left.right.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(7);
+
+            //tree.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(1);
+            //tree.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
+            //tree.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(3);
+            //tree.right.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+            //tree.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+            //tree.left.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
+            //tree.left.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+
+            int output = Leetcodechallenge.Day11.DiameterofBinaryTree.DiameterOfBinaryTree(tree);
+            #endregion
+
+            #region Last Stone Weight Solution
+            //int[] arr = { 2, 7, 4, 1, 8, 1 };
+            //int[] arr = { 1 };
+            //var result = LastStoneWeightSolution.LastStoneWeight(arr);
+            #endregion
+
+
             Console.ReadLine();
         }
     }
