@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Algorithms.LinkedList.LinkedList;
+using static Algorithms.LinkedList.Check;
 
-namespace Algorithms.LinkedList.Solutions
+namespace Algorithms.LinkedListSolution.Single
 {
     public static class AddTwoNumbers
     {
@@ -59,6 +59,76 @@ namespace Algorithms.LinkedList.Solutions
 
             return newNode.head;
         }
+    }
+
+    public class SingleLinkedList
+    {
+        public Node head;
+
+        public SingleLinkedList()
+        {
+            head = null;
+        }
+
+        public string Transversal(Node head)
+        {
+            StringBuilder sb = new StringBuilder();
+            while (head != null)
+            {
+                sb.Append(head.data.ToString());
+                head = head.next;
+            }
+            return sb.ToString();
+        }
+
+        public void AddToBegining(int value)
+        {
+            if (head == null)
+            {
+                head = new Node(value);
+            }
+            else
+            {
+                Node temp = new Node(value);
+                temp.next = head;
+                head = temp;
+            }
+        }
+
+        public void AddToEnd(int value)
+        {
+            if (head == null)
+            {
+                head = new Node(value);
+            }
+            else
+            {
+                Node node = new Node(value);
+                Node lastNode = GetLastNode(head);
+                lastNode.next = node;
+            }
+        }
+
+        public Node GetLastNode(Node head)
+        {
+            while (head.next != null)
+            {
+                head = head.next;
+            }
+            return head;
+        }
 
     }
+
+    public class Node
+    {
+        public int data;
+        public Node next;
+        public Node(int d)
+        {
+            data = d;
+            next = null;
+        }
+    }
+
 }

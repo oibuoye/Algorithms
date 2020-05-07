@@ -13,7 +13,6 @@ namespace Algorithms.BinarySearchTree
             Node node = new Node();
             node.value = key;
             node.left = node.right = null;
-
             return node;
         }
     }

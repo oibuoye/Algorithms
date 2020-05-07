@@ -25,6 +25,17 @@ using Algorithms.Leetcodechallenge.Day09;
 using Algorithms.Leetcodechallenge.Day10;
 using Algorithms.Leetcodechallenge.Day11;
 using Algorithms.Leetcodechallenge.Day12;
+using Algorithms.Leetcodechallenge.Day13;
+using Algorithms.Leetcodechallenge.Day14;
+using Algorithms.Leetcodechallenge.Day19;
+using Algorithms.Leetcodechallenge.Day15;
+using Algorithms.Leetcodechallenge.Day20;
+using Algorithms.Leetcodechallenge.Day22;
+using Algorithms.Leetcodechallenge.Day25;
+using Algorithms.Leetcodeweeklycontest;
+using Algorithms.Leetcodechallenge.Day27;
+using Algorithms.Leetcodechallenge.May.Day02;
+using Algorithms.Leetcodechallenge.May.Day01;
 
 namespace Algorithms
 {
@@ -33,6 +44,17 @@ namespace Algorithms
         static void Main(string[] args)
         {
             #region
+            #endregion
+
+            #region SA
+
+            #region ProductofArrayExceptSelf Solution
+            //int[] arr = { 1, 2, 3, 4 };
+            //int[] arr = { 0, 0 };
+            //var result = ProductofArrayExceptSelf.ProductExceptSelf(arr);
+            #endregion
+
+
             #endregion
 
             #region Abbreviation: You can perform the following operations on the string, :
@@ -1054,30 +1076,142 @@ namespace Algorithms
             #endregion
 
             #region Diameter of Binary Tree
-            TreeNode tree = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(1);
-            tree.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(2);
-            tree.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(3);
-            tree.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
-            tree.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
-
-            //tree.left.right.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(6);
-            //tree.left.right.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(7);
-
-            //tree.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(1);
-            //tree.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
-            //tree.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(3);
-            //tree.right.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+            //TreeNode tree = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(1);
+            //tree.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(2);
+            //tree.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(3);
+            //tree.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
             //tree.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
-            //tree.left.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
-            //tree.left.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
 
-            int output = Leetcodechallenge.Day11.DiameterofBinaryTree.DiameterOfBinaryTree(tree);
+            ////tree.left.right.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(6);
+            ////tree.left.right.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(7);
+
+            ////tree.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(1);
+            ////tree.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
+            ////tree.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(3);
+            ////tree.right.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+            ////tree.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+            ////tree.left.left.right = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(4);
+            ////tree.left.left.left = Leetcodechallenge.Day11.BinarySearchTree.CreateNewNode(5);
+
+            //int output = Leetcodechallenge.Day11.DiameterofBinaryTree.DiameterOfBinaryTree(tree);
             #endregion
 
             #region Last Stone Weight Solution
             //int[] arr = { 2, 7, 4, 1, 8, 1 };
             //int[] arr = { 1 };
             //var result = LastStoneWeightSolution.LastStoneWeight(arr);
+            #endregion
+
+            #region FindMinFibonacciNumbers Solution
+            //Leetcode challenge
+            //var result = FindMinFibonacciNumbersSolution.FindMinFibonacciNumbers(3);
+            #endregion
+
+            #region SearchinRotatedSortedArray Solution
+            //int[] arr = { 4, 5, 6, 7, 0, 1, 2 };
+            //int target = 0;
+            //int target = 3;
+            //var result = SearchinRotatedSortedArray.Search(arr, target);
+            #endregion
+
+            #region Contiguous Array
+            ////int[] arr = { 0, 1 };
+            ////int[] arr = { 0, 1, 0 };
+            ////int[] arr = { 0, 1, 0, 1};
+            //int[] arr = {0,1,1,0,1,1,1,0 };
+            //var result = ContiguousArray.FindMaxLength(arr);
+            #endregion
+
+            #region String shift
+            //string s = "abc";
+            //int[,] arr = { { 0, 1 }, { 1, 2 }};
+
+            //string s = "abcdefg";
+            //int[,] arr = { { 1, 1 }, { 1, 1 }, { 0, 2 }, { 1, 3 } };
+            //var result = PerformStringShifts.StringShift(s, arr);
+
+            //string s = "( () ) (( () ) () () (* ) (* () ( () ) () )())()()((()())((()))(*";
+            //string s = "()";
+            //string s = "(*)";
+            //string s = "(*))";
+            //string s = "(*)))";
+            //string s = "((****)))";
+            //var result = PerformStringShifts.CheckValidString(s);
+
+            #endregion
+
+            #region Binary Search Tree from Preorder Traversal
+            //int[] arr = { 8, 5, 1, 7, 10, 12 };
+            //var result = BinarySearchTreefromPreorderTraversal.BstFromPreorder(arr);
+            #endregion
+
+            #region Subarray Sum Equals K
+            //int[] arr = { 1, 1, 1 };
+            //int[] arr = { 1, 1, 2, 3, 4 };
+            //var result = SubarraySumEqualsK.SubarraySum(arr, 6);
+            #endregion
+
+            #region Jump game solution
+            //int[] arr = { 2, 2, 1, 1, 4 };
+            //int[] arr = { 4, 2, 1, 0, 4 };
+            //int[] arr = { 3, 2, 1, 0, 4 };
+            //int[] arr = { 0, 2, 1, 1, 4 };
+            //int[] arr = { 1, 0, 1, 0 };
+            //int[] arr = { 1, 0, 2 };
+            //int[] arr = { 1, 0, 0, 2 };
+            //int[] arr = { 2, 0, 1, 2 };
+            //int[] arr = { 3, 0, 8, 2, 0, 0, 1 };
+            //int[] arr = { 5, 9, 3, 2, 1, 0, 2, 3, 2, 1, 0, 0 };
+            //var result = JumpGameSolution.CanJump(arr);
+            #endregion
+
+            #region Weekly Contest
+            //int[] arr = { 2, 2, 1, 1, 4 };
+            //int[] arr = { 4, 2, 1, 0, 4 };
+            //int[] arr = { 3, 2, 1, 0, 4 };
+            //int[] arr = { 0, 2, 1, 1, 4 };
+            //int[] arr = { 1, 0, 1, 0 };
+            //int[] arr = { 1, 0, 2 };
+            //int[] arr = { 1, 0, 0, 2 };
+            //int[] arr = { 2, 0, 1, 2 };
+            //int[] arr = { 9, 7, 7, 9, 7, 7, 9 };
+            ////int[] arr = { 100, 40, 17, 9, 73, 75 };
+            //var result = Week186Solution.MaxScore(arr, 3);
+
+            //var result1 = Week186Solution.MaxScore1("00111");
+            #endregion
+
+            #region ImageEditing
+            //var list1 = new List<int>() { 1, 0, 1, 1, 1 };
+            //var list2 = new List<int>() { 1, 0, 1, 1, 0 };
+            //var list3 = new List<int>() { 1, 1, 1, 1, 0 };
+            //var list4 = new List<int>() { 1, 1, 1, 1, 0 };
+            //var list5 = new List<int>() { 1, 1, 1, 1, 1 };
+            //var numbers = new List<List<int>>();
+            //numbers.Add(list1);
+            //numbers.Add(list2);
+            //numbers.Add(list3);
+            //numbers.Add(list4);
+            //numbers.Add(list5);
+            //int result = ImageEditing.largestMatrix(numbers);
+            #endregion
+
+            #region Maximal Square Solution
+            //char[,] arr = { { '1', '0', '1', '0', '0' }, { '1', '0', '1', '1', '1' }, { '1', '1', '1', '1', '1' }, { '1', '0', '0', '1', '0' } };
+            //char[,] arr = { };
+            //var result = MaximalSquareSolution.MaximalSquare(arr);
+            #endregion
+
+            #region Jewels and Stones Solution
+            //string J = "aA";
+            //string S = "aAAbbbb";
+            ////string J = "z";
+            ////string S = "ZZ";
+            //var result = JewelsandStonesSolution.NumJewelsInStonesSol2(J, S);
+            #endregion
+
+            #region First Bad Version Solution
+            var result = FirstBadVersionSolution.FirstBadVersion(5);
             #endregion
 
 
