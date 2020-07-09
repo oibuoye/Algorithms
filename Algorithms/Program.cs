@@ -36,6 +36,8 @@ using Algorithms.Leetcodeweeklycontest;
 using Algorithms.Leetcodechallenge.Day27;
 using Algorithms.Leetcodechallenge.May.Day02;
 using Algorithms.Leetcodechallenge.May.Day01;
+using Algorithms.Leetcodechallenge.May.Day08;
+using Algorithms.Leetcodechallenge.May.Day09;
 
 namespace Algorithms
 {
@@ -1211,7 +1213,53 @@ namespace Algorithms
             #endregion
 
             #region First Bad Version Solution
-            var result = FirstBadVersionSolution.FirstBadVersion(5);
+            //var result = FirstBadVersionSolution.FirstBadVersion(5);
+            #endregion
+
+            #region Check Straight Line Solution
+            //int[][] arr = new int[6][];
+            ////arr[0] = new int[] { 1, 1 };
+            ////arr[1] = new int[] { 2, 2 };
+            ////arr[2] = new int[] { 3, 4 };
+            ////arr[3] = new int[] { 4, 5 };
+            ////arr[4] = new int[] { 5, 6 };
+            ////arr[5] = new int[] { 7, 7 };
+
+            //arr[0] = new int[] { 1, 2 };
+            //arr[1] = new int[] { 2, 3 };
+            //arr[2] = new int[] { 3, 4 };
+            //arr[3] = new int[] { 4, 5 };
+            //arr[4] = new int[] { 5, 6 };
+            //arr[5] = new int[] { 6, 7 };
+
+            //var result = CheckStraightLineSolution.CheckStraightLine(arr);
+            #endregion
+
+            #region Valid Perfect Square Solution
+            //var result = ValidPerfectSquareSolution.IsPerfectSquare(0);
+            //var result1 = ValidPerfectSquareSolution.IsPerfectSquare(14);
+            #endregion
+
+            #region Flood Fill Solution
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 1, 1, 1 };
+            //arr[1] = new int[] { 1, 1, 0 };
+            //arr[2] = new int[] { 1, 0, 1 };
+            ////arr[3] = new int[] { 4, 5 };
+            ////arr[4] = new int[] { 5, 6 };
+            ////arr[5] = new int[] { 7, 7 };
+
+            //arr[0] = new int[] { 1, 2 };
+            //arr[1] = new int[] { 2, 3 };
+            //arr[2] = new int[] { 3, 4 };
+            //arr[3] = new int[] { 4, 5 };
+            //arr[4] = new int[] { 5, 6 };
+            //arr[5] = new int[] { 6, 7 };
+
+            //var result = FloodFillSolution.FloodFill(arr, 1, 1, 2);
+            #endregion
+
+            #region
             #endregion
 
 
