@@ -38,6 +38,7 @@ using Algorithms.Leetcodechallenge.May.Day02;
 using Algorithms.Leetcodechallenge.May.Day01;
 using Algorithms.Leetcodechallenge.May.Day08;
 using Algorithms.Leetcodechallenge.May.Day09;
+using Algorithms.Leetcodechallenge.September.Day09;
 
 namespace Algorithms
 {
@@ -1262,6 +1263,24 @@ namespace Algorithms
             #region
             #endregion
 
+            #region Flood Fill Solution
+            string version1 = "0.1";
+            string version2 = "1.1";
+            string version11 = "1.0.1";
+            string version22 = "1.0.1.1";
+            string version111 = "7.5.2.4";
+            string version222 = "7.5.3";
+            string version1111 = "1.01";
+            string version2222 = "1.001";
+            string version11111 = "1.0";
+            string version22222 = "1.0.0";
+
+            var result = CompareVersionNumbers.CompareVersion(version1, version2);
+            var result2 = CompareVersionNumbers.CompareVersion(version11, version22);
+            var result3 = CompareVersionNumbers.CompareVersion(version111, version222);
+            var result4 = CompareVersionNumbers.CompareVersion(version1111, version2222);
+            var result5 = CompareVersionNumbers.CompareVersion(version11111, version22222);
+            #endregion
 
             Console.ReadLine();
         }

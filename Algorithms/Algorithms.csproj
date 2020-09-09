@@ -95,6 +95,7 @@
     <Compile Include="Leetcodechallenge\May\Day07\CousinsinBinaryTree.cs" />
     <Compile Include="Leetcodechallenge\May\Day08\CheckStraightLineSolution.cs" />
     <Compile Include="Leetcodechallenge\May\Day09\ValidPerfectSquareSolution.cs" />
+    <Compile Include="Leetcodechallenge\September\Day09\CompareVersionNumbers.cs" />
     <Compile Include="Leetcodeweeklycontest\Week186Solution.cs" />
     <Compile Include="LinkedListSolution\Check.cs" />
     <Compile Include="LinkedListSolution\Single\AddTwoNumbers.cs" />
