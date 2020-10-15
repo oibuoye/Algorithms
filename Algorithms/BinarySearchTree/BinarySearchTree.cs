@@ -13,9 +13,14 @@ namespace Algorithms.BinarySearchTree
             Node node = new Node();
             node.value = key;
             node.left = node.right = null;
-
             return node;
         }
-
     }
+
+    public class Node
+    {
+        public int? value;
+        public Node left, right;
+    }
+
 }
