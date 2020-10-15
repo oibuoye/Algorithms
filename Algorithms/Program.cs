@@ -39,6 +39,9 @@ using Algorithms.Leetcodechallenge.May.Day01;
 using Algorithms.Leetcodechallenge.May.Day08;
 using Algorithms.Leetcodechallenge.May.Day09;
 using Algorithms.Leetcodechallenge.September.Day09;
+using Algorithms.Leetcodechallenge.September.Day10;
+using Algorithms.Leetcodechallenge.October.Day01;
+using Algorithms.CoderByte;
 
 namespace Algorithms
 {
@@ -1118,10 +1121,10 @@ namespace Algorithms
             #endregion
 
             #region Contiguous Array
-            ////int[] arr = { 0, 1 };
-            ////int[] arr = { 0, 1, 0 };
-            ////int[] arr = { 0, 1, 0, 1};
-            //int[] arr = {0,1,1,0,1,1,1,0 };
+            //int[] arr = { 0, 1 };
+            //int[] arr = { 0, 1, 0 };
+            //int[] arr = { 0, 1, 0, 1};
+            //int[] arr = { 0, 1, 1, 0, 1, 1, 1, 0 };
             //var result = ContiguousArray.FindMaxLength(arr);
             #endregion
 
@@ -1263,24 +1266,68 @@ namespace Algorithms
             #region
             #endregion
 
-            #region Flood Fill Solution
-            string version1 = "0.1";
-            string version2 = "1.1";
-            string version11 = "1.0.1";
-            string version22 = "1.0.1.1";
-            string version111 = "7.5.2.4";
-            string version222 = "7.5.3";
-            string version1111 = "1.01";
-            string version2222 = "1.001";
-            string version11111 = "1.0";
-            string version22222 = "1.0.0";
+            #region Compare version Solution
+            //string version1 = "0.1";
+            //string version2 = "1.1";
+            //string version11 = "1.0.1";
+            //string version22 = "1.0.1.1";
+            //string version111 = "7.5.2.4";
+            //string version222 = "7.5.3";
+            //string version1111 = "1.01";
+            //string version2222 = "1.001";
+            //string version11111 = "1.0";
+            //string version22222 = "1.0.0";
 
-            var result = CompareVersionNumbers.CompareVersion(version1, version2);
-            var result2 = CompareVersionNumbers.CompareVersion(version11, version22);
-            var result3 = CompareVersionNumbers.CompareVersion(version111, version222);
-            var result4 = CompareVersionNumbers.CompareVersion(version1111, version2222);
-            var result5 = CompareVersionNumbers.CompareVersion(version11111, version22222);
+            //var result = CompareVersionNumbers.CompareVersion(version1, version2);
+            //var result2 = CompareVersionNumbers.CompareVersion(version11, version22);
+            //var result3 = CompareVersionNumbers.CompareVersion(version111, version222);
+            //var result4 = CompareVersionNumbers.CompareVersion(version1111, version2222);
+            //var result5 = CompareVersionNumbers.CompareVersion(version11111, version22222);
             #endregion
+
+            #region Bulls and cows Solution
+            //string secret = "1807";
+            //string guess = "7810";
+            //string secret1 = "1123";
+            //string guess1 = "0111";
+            //string secret11 = "4123";
+            //string guess11 = "1111";
+
+            ////var result = BullsandCows.GetHint(secret, guess);
+            //var result2 = BullsandCows.GetHint(secret1, guess1);
+            //var result3 = BullsandCows.GetHint(secret11, guess11);
+            #endregion
+
+            #region Number of Recent Calls Solution
+
+            //RecentCounter recentCounter = new RecentCounter();
+            //int res1 = recentCounter.Ping(1);     // requests = [1], range is [-2999,1], return 1
+            //int res2 = recentCounter.Ping(100);   // requests = [1, 100], range is [-2900,100], return 2
+            //int res3 = recentCounter.Ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3
+            //int res4 = recentCounter.Ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3
+
+            #endregion
+
+            #region Coder Byte
+            //var input = new string[] { "4", "1:1", "2:2", "1:2", "0:1" };
+            //var input = new string[] { "4", "0:1", "2:2", "1:2", "3:1" };
+            //var result3 = Challenges.GasStation(input);
+
+            //var input = new string[] { "10111", "10101", "11101", "11111" };
+            //var input = new string[] { "01111", "01101", "00011", "11110" };
+            //var result3 = Challenges.BitmapHoles(input);
+            #endregion
+
+            #region Rotate Array
+            //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+            //int d = 2;
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+            int d = 3;
+            //int[] arr = { 1, 2, 3 };
+            //int d = 3;
+            int[] result1 = ArrayOperation.ArrayRightRotation(arr, d);
+            #endregion
+
 
             Console.ReadLine();
         }

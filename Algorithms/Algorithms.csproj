@@ -63,6 +63,7 @@
     <Compile Include="BinarySearchTree\Solutions\LeftSkewedTree.cs" />
     <Compile Include="BinarySearchTree\Solutions\TreeOperations.cs" />
     <Compile Include="BinarySearchTree\Solutions\RightSkewedTree.cs" />
+    <Compile Include="CoderByte\Challenges.cs" />
     <Compile Include="DynamicProgramming\Abbreviation.cs" />
     <Compile Include="DynamicProgramming\ChangeCoin.cs" />
     <Compile Include="DynamicProgramming\CoinsChangeV2.cs" />
@@ -95,7 +96,10 @@
     <Compile Include="Leetcodechallenge\May\Day07\CousinsinBinaryTree.cs" />
     <Compile Include="Leetcodechallenge\May\Day08\CheckStraightLineSolution.cs" />
     <Compile Include="Leetcodechallenge\May\Day09\ValidPerfectSquareSolution.cs" />
+    <Compile Include="Leetcodechallenge\October\Day01\NumberofRecentCalls.cs" />
+    <Compile Include="Leetcodechallenge\October\Day02\CombinationSum.cs" />
     <Compile Include="Leetcodechallenge\September\Day09\CompareVersionNumbers.cs" />
+    <Compile Include="Leetcodechallenge\September\Day10\BullsandCows.cs" />
     <Compile Include="Leetcodeweeklycontest\Week186Solution.cs" />
     <Compile Include="LinkedListSolution\Check.cs" />
     <Compile Include="LinkedListSolution\Single\AddTwoNumbers.cs" />
@@ -173,6 +177,7 @@
     <Folder Include="Leetcodechallenge\May\Day22\" />
     <Folder Include="Leetcodechallenge\May\Day25\" />
     <Folder Include="Leetcodechallenge\May\Day27\" />
+    <Folder Include="Leetcodechallenge\October\Day15\" />
     <Folder Include="LinkedListSolution\Double\" />
     <Folder Include="WIP\" />
   </ItemGroup>
