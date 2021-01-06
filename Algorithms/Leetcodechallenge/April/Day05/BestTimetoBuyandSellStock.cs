@@ -48,5 +48,90 @@ namespace Algorithms.Leetcodechallenge.Day05
             return maxProfit;
         }
 
+        public static int MaxProfit(int k, int[] prices)
+        {
+
+            int maxProfit = 0;
+            int counter = 0;
+            int tracker = -1;
+            Dictionary<int, int> profits = new Dictionary<int, int>();
+            for (int i = 1; i < prices.Length; i++)
+            {
+                if (prices[i] > prices[i - 1])
+                {
+                    if((i != prices.Length -1) && prices[i] > prices[i + 1])
+                    {
+                        profits[counter] = tracker != -1? prices[i] - tracker : prices[i] - prices[i - 1];
+                        counter++;
+                        tracker = -1;
+                    }
+                    else
+                    {
+                        if(tracker != -1)
+                        {
+                            profits[counter] = prices[i] - tracker;
+                            counter++;
+                            tracker = -1;
+                        }
+                        else
+                        {
+                            if (i != (prices.Length - 1))
+                            {
+                                tracker = prices[i - 1];
+                            }
+                            else
+                            {
+                                profits[counter] = prices[i] - prices[i - 1];
+                                counter++;
+                            }
+                        }
+                    }
+                }
+            }
+            profits = profits.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+
+            counter = 0;
+            foreach (var profit in profits)
+            {
+                if (counter != k)
+                {
+                    maxProfit += profit.Value;
+                    counter++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+
+            //int maxProfit = 0;
+            //int counter = 0;
+            //Dictionary<int, int> profits = new Dictionary<int, int>();
+            //for (int i = 1; i < prices.Length; i++)
+            //{
+            //    if(prices[i] > prices[i - 1])
+            //    {
+            //        profits[counter] = prices[i] - prices[i - 1];
+            //        counter++;
+            //    }
+            //}
+            //profits = profits.OrderByDescending(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+
+            //counter = 0;
+            //foreach (var profit in profits)
+            //{
+            //    if(counter != k)
+            //    {
+            //        maxProfit += profit.Value;
+            //        counter++;
+            //    }
+            //    else
+            //    {
+            //        break;
+            //    }
+            //}
+            return maxProfit;
+        }
     }
 }

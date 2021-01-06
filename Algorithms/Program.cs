@@ -42,6 +42,10 @@ using Algorithms.Leetcodechallenge.September.Day09;
 using Algorithms.Leetcodechallenge.September.Day10;
 using Algorithms.Leetcodechallenge.October.Day01;
 using Algorithms.CoderByte;
+using Algorithms.Leetcodechallenge.October.Day14;
+using Algorithms.Leetcodechallenge.October.Day16;
+using Algorithms.Codilty;
+using System.Collections;
 
 namespace Algorithms
 {
@@ -75,7 +79,7 @@ namespace Algorithms
 
             #region MaxArraySum: Find the subset of non-adjacent elements with the maximum sum
             //int[] dif = { -2, 1, 3, -4, 5, 8, 9 };
-            //int[] dif = { -2, 1, 1, 4, -1, 5 };
+            //int[] dif = { 0, 3, 1, 1, 100 };
             //int maxResult = MaxArraySum.maxSubsetSum(dif);
             #endregion
 
@@ -1321,12 +1325,91 @@ namespace Algorithms
             #region Rotate Array
             //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
             //int d = 2;
-            int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-            int d = 3;
+            //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+            //int d = 3;
             //int[] arr = { 1, 2, 3 };
             //int d = 3;
-            int[] result1 = ArrayOperation.ArrayRightRotation(arr, d);
+            //int[] result1 = ArrayOperation.ArrayRightRotation(arr, d);
             #endregion
+
+            #region HouseRobberII: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night. Given a list of non - negative integers nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
+            //int[] dif = { 2, 3, 2 };
+            //int[] dif = { 1, 2, 3, 1 };
+            //int[] dif = { 200, 3, 140, 20, 10 };
+            //int[] par = { 2, 1, 1, 2 };
+            //int[] par = { 0, 3, 1, 1, 100 };
+            //int houResult = HouseRobberII.Rob(par);
+            #endregion
+            #region Rotate Array
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 1, 3, 5, 7 };
+            //arr[1] = new int[] { 10, 11, 16, 20 };
+            //arr[2] = new int[] { 23, 30, 34, 50 };
+
+            //int[][] arr = new int[1][];
+            //arr[0] = new int[] { 1, 3, 5, 7 };
+            //arr[1] = new int[] { 10, 11, 16, 20 };
+            //arr[2] = new int[] { 23, 30, 34, 50 };
+
+            //arr[0] = new int[] { };
+
+
+            //bool result = Search2DMatrix.SearchMatrix(arr, 3);
+            #endregion
+
+            #region Codility
+            //int[] A = { 2, 3, 2, 3, 5 };
+            //int[] B = { 3, 4, 2, 4, 2 };
+            //var result3 = CodilitySol.solution(A, B);
+            #endregion
+
+            #region Best Time to Buy and Sell Stock IV  You are given an integer array prices where prices[i] is the price of a given stock on the ith day. Design an algorithm to find the maximum profit. You may complete at most k transactions. Notice that you may not engage in multiple transactions simultaneously(i.e., you must sell the stock before you buy again).
+            //int[] arr = { 2, 4, 1 };
+            ////int[] arr2 = { 2, 1, 4, 5, 2, 9, 7 };
+            //int[] arr2 = { 2, 1, 2, 1, 0, 1, 2 };
+            //int[] arr1 = { 3, 2, 6, 5, 0, 3 };
+            ////int result = BestTimetoBuyandSellStock.MaxProfit(2, arr); 
+            //int result1 = BestTimetoBuyandSellStock.MaxProfit(2, arr2);
+            #endregion
+
+            #region Can Sum to a target
+            //int[] numbers = { 2, 5, 5, 12 };
+            //var canResult = TragetSum.CanSum(11, numbers, new Dictionary<int, bool> { });
+            #endregion
+
+            //int number = 50;
+            //Int64 resul2 = Dynamicprogramming.BottomUpFib(number);
+            //Int64 resul4 = Dynamicprogramming.DPFib(number);
+            //Int64 resul5 = Dynamicprogramming.GridTraveller(18, 18);
+
+            //bool resul6 = Dynamicprogramming.CanSum(7, new int[] { 2, 3 }, new Dictionary<int, bool> { });
+            //bool resul7 = Dynamicprogramming.CanSum(7, new int[] { 5, 3, 4, 7 }, new Dictionary<int, bool> { });
+            //bool resul8 = Dynamicprogramming.CanSum(7, new int[] { 2, 4 }, new Dictionary<int, bool> { });
+            //bool resul9 = Dynamicprogramming.CanSum(8, new int[] { 2, 3, 5 }, new Dictionary<int, bool> { });
+            //bool resul10 = Dynamicprogramming.CanSum(300, new int[] { 7, 14 }, new Dictionary<int, bool> { });
+
+            //ArrayList resul11 = Dynamicprogramming.HowSum(7, new int[] { 2, 3 });
+            //ArrayList resul12 = Dynamicprogramming.HowSum(7, new int[] { 5, 3, 4, 7 });
+            //ArrayList resul13 = Dynamicprogramming.HowSum(7, new int[] { 2, 4 });
+            //ArrayList resul14 = Dynamicprogramming.HowSum(8, new int[] { 2, 3, 5 });
+            //ArrayList resul144 = Dynamicprogramming.HowSum(8, new int[] { 1, 4 });
+            //ArrayList resul15 = Dynamicprogramming.HowSum(300, new int[] { 7, 15 });
+
+            //int[] resul12 = Dynamicprogramming.BestSum(7, new int[] { 5, 3, 4, 7 });
+            //int[] resul14 = Dynamicprogramming.BestSum(8, new int[] { 2, 3, 5 });
+            //int[] resul11 = Dynamicprogramming.BestSum(8, new int[] { 1, 4 });
+            //int[] resul111 = Dynamicprogramming.BestSum(8, new int[] { 1, 4 });
+            //int[] resul13 = Dynamicprogramming.BestSum(100, new int[] { 1, 2, 5, 25 });
+
+            //bool resul1 = Dynamicprogramming.CanConstruct("abcdef", new string[] { "ab", "abc", "cd", "def", "abcd" });
+            //bool resul2 = Dynamicprogramming.CanConstruct("skateboard", new string[] { "bo", "rd", "ate", "t", "ska", "sk", "boar" });
+            //bool resul3 = Dynamicprogramming.CanConstruct("enterapotentpot", new string[] { "a", "p", "ent", "enter", "ot", "o", "t" });
+            //bool resul4 = Dynamicprogramming.CanConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
+
+            //int resul1 = Dynamicprogramming.CountConstruct("abcdef", new string[] { "ab", "abc", "cd", "def", "abcd" });
+            //int resul2 = Dynamicprogramming.CountConstruct("skateboard", new string[] { "bo", "rd", "ate", "t", "ska", "sk", "boar" });
+            //int resul3 = Dynamicprogramming.CountConstruct("enterapotentpot", new string[] { "a", "p", "ent", "enter", "ot", "o", "t" });
+            //int resul4 = Dynamicprogramming.CountConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
 
 
             Console.ReadLine();
