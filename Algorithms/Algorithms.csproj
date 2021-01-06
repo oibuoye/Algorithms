@@ -64,7 +64,6 @@
     <Compile Include="BinarySearchTree\Solutions\TreeOperations.cs" />
     <Compile Include="BinarySearchTree\Solutions\RightSkewedTree.cs" />
     <Compile Include="CoderByte\Challenges.cs" />
-    <Compile Include="Codilty\CodilitySol.cs" />
     <Compile Include="DynamicProgramming\Abbreviation.cs" />
     <Compile Include="DynamicProgramming\ChangeCoin.cs" />
     <Compile Include="DynamicProgramming\CoinsChangeV2.cs" />
@@ -92,6 +91,7 @@
     <Compile Include="Leetcodechallenge\April\Day22\SubarraySumEqualsK.cs" />
     <Compile Include="Leetcodechallenge\April\Day25\JumpGameSolution.cs" />
     <Compile Include="Leetcodechallenge\April\Day27\MaximalSquareSolution.cs" />
+    <Compile Include="Leetcodechallenge\KthMissingPositiveNumber.cs" />
     <Compile Include="Leetcodechallenge\May\Day01\FirstBadVersionSolution.cs" />
     <Compile Include="Leetcodechallenge\May\Day02\JewelsandStonesSolution.cs" />
     <Compile Include="Leetcodechallenge\May\Day07\CousinsinBinaryTree.cs" />

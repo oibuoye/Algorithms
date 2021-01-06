@@ -44,8 +44,8 @@ using Algorithms.Leetcodechallenge.October.Day01;
 using Algorithms.CoderByte;
 using Algorithms.Leetcodechallenge.October.Day14;
 using Algorithms.Leetcodechallenge.October.Day16;
-using Algorithms.Codilty;
 using System.Collections;
+using Algorithms.Leetcodechallenge;
 
 namespace Algorithms
 {
@@ -1411,6 +1411,9 @@ namespace Algorithms
             //int resul3 = Dynamicprogramming.CountConstruct("enterapotentpot", new string[] { "a", "p", "ent", "enter", "ot", "o", "t" });
             //int resul4 = Dynamicprogramming.CountConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
 
+
+            int resul12 = KthMissingPositiveNumber.FindKthPositive(new int[] { 2, 3, 4, 7, 11 }, 5);
+            int resul14 = KthMissingPositiveNumber.FindKthPositive(new int[] { 1, 2, 3, 4 }, 2);
 
             Console.ReadLine();
         }
