@@ -70,6 +70,7 @@
     <Compile Include="DynamicProgramming\CountSubsequencesofType.cs" />
     <Compile Include="DynamicProgramming\LongestSubstring.cs" />
     <Compile Include="DynamicProgramming\MaxArraySum.cs" />
+    <Compile Include="Leetcodechallenge\April2021\LeetApril2021Challenges.cs" />
     <Compile Include="Leetcodechallenge\April\Day01\SingleNumberSolution.cs" />
     <Compile Include="Leetcodechallenge\April\Day02\HappyNumberSolution.cs" />
     <Compile Include="Leetcodechallenge\April\Day03\MaximumSubarraySolution.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Leetcodechallenge\April\Day25\JumpGameSolution.cs" />
     <Compile Include="Leetcodechallenge\April\Day27\MaximalSquareSolution.cs" />
     <Compile Include="Leetcodechallenge\KthMissingPositiveNumber.cs" />
+    <Compile Include="Leetcodechallenge\LongestPalindromicSubstring.cs" />
     <Compile Include="Leetcodechallenge\May\Day01\FirstBadVersionSolution.cs" />
     <Compile Include="Leetcodechallenge\May\Day02\JewelsandStonesSolution.cs" />
     <Compile Include="Leetcodechallenge\May\Day07\CousinsinBinaryTree.cs" />
@@ -103,6 +105,7 @@
     <Compile Include="Leetcodechallenge\October\Day16\Search2DMatrix.cs" />
     <Compile Include="Leetcodechallenge\September\Day09\CompareVersionNumbers.cs" />
     <Compile Include="Leetcodechallenge\September\Day10\BullsandCows.cs" />
+    <Compile Include="Leetcodechallenge\TwoStringArraysareEquivalent.cs" />
     <Compile Include="Leetcodeweeklycontest\Week186Solution.cs" />
     <Compile Include="LinkedListSolution\Check.cs" />
     <Compile Include="LinkedListSolution\Single\AddTwoNumbers.cs" />

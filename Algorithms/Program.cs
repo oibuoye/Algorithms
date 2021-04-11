@@ -1,4 +1,5 @@
-﻿using Algorithms.BinarySearchTree;
+﻿using Algorithms;
+using Algorithms.BinarySearchTree;
 using Algorithms.BinarySearchTree.Solutions;
 using Algorithms.DynamicProgramming;
 using Algorithms.Leetcodechallenge.Day01;
@@ -19,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-//using static Algorithms.LinkedList.LinkedList;
+using Algorithms.LinkedListSolution;
 using Algorithms.Leetcodechallenge.Day08;
 using Algorithms.Leetcodechallenge.Day09;
 using Algorithms.Leetcodechallenge.Day10;
@@ -46,6 +47,8 @@ using Algorithms.Leetcodechallenge.October.Day14;
 using Algorithms.Leetcodechallenge.October.Day16;
 using System.Collections;
 using Algorithms.Leetcodechallenge;
+using Algorithms.LinkedListSolution.Single;
+using Algorithms.Leetcodechallenge.April2021;
 
 namespace Algorithms
 {
@@ -60,7 +63,7 @@ namespace Algorithms
 
             #region ProductofArrayExceptSelf Solution
             //int[] arr = { 1, 2, 3, 4 };
-            //int[] arr = { 0, 0 };
+            ////int[] arr = { 0, 0 };
             //var result = ProductofArrayExceptSelf.ProductExceptSelf(arr);
             #endregion
 
@@ -80,16 +83,18 @@ namespace Algorithms
             #region MaxArraySum: Find the subset of non-adjacent elements with the maximum sum
             //int[] dif = { -2, 1, 3, -4, 5, 8, 9 };
             //int[] dif = { 0, 3, 1, 1, 100 };
+            //int[] dif = { -2, 1, 1, 4, -1, 5 };
             //int maxResult = MaxArraySum.maxSubsetSum(dif);
+            //int maxResult1 = MaxArraySum.maxSubsetSum1(dif);
             #endregion
 
             #region Binary Search Tree:: Right skewed tree, Left skewed tree, CheckIsSameTree
 
-            //////Right skewed tree
-            ////var rightNode = new RightSkewedTree().GetRightSkewedTree();
+            ////Right skewed tree
+            //var rightNode = new RightSkewedTree().GetRightSkewedTree();
 
-            //////Left skewed tree
-            ////var leftNode = new LeftSkewedTree().GetLeftSkewedTree();
+            ////Left skewed tree
+            //var leftNode = new LeftSkewedTree().GetLeftSkewedTree();
 
             ////Node root = null;
             ////TreeOperations bst = new TreeOperations();
@@ -150,20 +155,19 @@ namespace Algorithms
             //Node tree1 = BinarySearchTree.BinarySearchTree.CreateNewNode(1);
             //tree1.left = BinarySearchTree.BinarySearchTree.CreateNewNode(2);
             //tree1.right = BinarySearchTree.BinarySearchTree.CreateNewNode(1);
-            ////tree1.left.left = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
-            ////tree1.left.right = BinarySearchTree.BinarySearchTree.CreateNewNode(4);
-            ////tree1.right.left = BinarySearchTree.BinarySearchTree.CreateNewNode(5);
-            ////tree1.right.right = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
+            //tree1.left.left = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
+            //tree1.left.right = BinarySearchTree.BinarySearchTree.CreateNewNode(4);
+            //tree1.right.left = BinarySearchTree.BinarySearchTree.CreateNewNode(5);
+            //tree1.right.right = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
 
             //Node tree2 = BinarySearchTree.BinarySearchTree.CreateNewNode(1);
             //tree2.left = BinarySearchTree.BinarySearchTree.CreateNewNode(null);
             //tree2.right = BinarySearchTree.BinarySearchTree.CreateNewNode(2);
-            ////tree2.left.left = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
-            ////tree2.left.right = BinarySearchTree.BinarySearchTree.CreateNewNode(4);
-            ////tree2.right.left = BinarySearchTree.BinarySearchTree.CreateNewNode(5);
-            ////tree2.right.right = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
+            //tree2.left.left = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
+            //tree2.left.right = BinarySearchTree.BinarySearchTree.CreateNewNode(4);
+            //tree2.right.left = BinarySearchTree.BinarySearchTree.CreateNewNode(5);
+            //tree2.right.right = BinarySearchTree.BinarySearchTree.CreateNewNode(3);
             //Boolean output1 = CheckIsSameTree.IsSameTree(tree1, tree2);
-
             #endregion
 
             #region Subsequences
@@ -781,7 +785,7 @@ namespace Algorithms
 
             #region Longest substring without repeating characters
             //string wordTest = "abcbacagad";
-            //string wordTest = "abcbadc";
+            ////string wordTest = "abcbadc";
             //int maxL = LongestSubstring.longestSubstringCharacters(wordTest);
             #endregion
 
@@ -824,7 +828,7 @@ namespace Algorithms
 
             #region Codility Frog Jump with leaves spread on water, get the earliest time to start jumping
             //int[] leaves = { 5, 3, 1, 4, 2, 3, 5, 4 };
-            //int[] leaves = { 1 };
+            ////int[] leaves = { 1 };
             //int resultWays = FrogJumpSolution.FrogJump(5, leaves);
             #endregion
 
@@ -879,8 +883,10 @@ namespace Algorithms
             #endregion
 
             #region Change coins
-            //int[] arr = { 1, 2, 3};
+            //int[] arr = { 1, 2, 3 };
             //int resultWays = ChangeCoin.change(10, arr);
+            ////int resultWays2 = ChangeCoin.change2(10, arr);
+            //string wait = string.Empty;
             #endregion
 
             #region Find Median of Sorted Arrays WIP
@@ -944,6 +950,9 @@ namespace Algorithms
             //int[] max = Sorting.SelectionSorting(arr);
             //int[] max1 = Sorting.BubbleSort(arr1);
             //int[] max2 = Sorting.InsertionSort(arr2);
+
+            //int[] arr22 = { 2, 1 , 4, 3, 6, 8, 0};
+            //int[] max1 = Sorting.BubbleSortp(arr22);
             #endregion
 
             #region Compare triplets
@@ -975,7 +984,7 @@ namespace Algorithms
 
             #region Linkedlist Add two numbers
 
-            //LinkedList.LinkedList.SingleLinkedList node1 = new LinkedList.LinkedList.SingleLinkedList();
+            //Single.SingleLinkedList node1 = new SingleLinkedList();
             //node1.AddToBegining(3);
             //node1.AddToBegining(4);
             //node1.AddToBegining(2);
@@ -1011,7 +1020,7 @@ namespace Algorithms
             #endregion
 
             #region Maximum Subset Array solution
-            //int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            ////int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
             //int maxResult = MaximumSubarraySolution.maxSubsetArray(arr);
             #endregion
 
@@ -1377,6 +1386,7 @@ namespace Algorithms
             //var canResult = TragetSum.CanSum(11, numbers, new Dictionary<int, bool> { });
             #endregion
 
+            #region Dynamic programming
             //int number = 50;
             //Int64 resul2 = Dynamicprogramming.BottomUpFib(number);
             //Int64 resul4 = Dynamicprogramming.DPFib(number);
@@ -1385,8 +1395,8 @@ namespace Algorithms
             //bool resul6 = Dynamicprogramming.CanSum(7, new int[] { 2, 3 }, new Dictionary<int, bool> { });
             //bool resul7 = Dynamicprogramming.CanSum(7, new int[] { 5, 3, 4, 7 }, new Dictionary<int, bool> { });
             //bool resul8 = Dynamicprogramming.CanSum(7, new int[] { 2, 4 }, new Dictionary<int, bool> { });
-            //bool resul9 = Dynamicprogramming.CanSum(8, new int[] { 2, 3, 5 }, new Dictionary<int, bool> { });
-            //bool resul10 = Dynamicprogramming.CanSum(300, new int[] { 7, 14 }, new Dictionary<int, bool> { });
+            ////bool resul9 = Dynamicprogramming.CanSum(8, new int[] { 2, 3, 5 }, new Dictionary<int, bool> { });
+            ////bool resul10 = Dynamicprogramming.CanSum(300, new int[] { 7, 14 }, new Dictionary<int, bool> { });
 
             //ArrayList resul11 = Dynamicprogramming.HowSum(7, new int[] { 2, 3 });
             //ArrayList resul12 = Dynamicprogramming.HowSum(7, new int[] { 5, 3, 4, 7 });
@@ -1412,8 +1422,34 @@ namespace Algorithms
             //int resul4 = Dynamicprogramming.CountConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", new string[] { "e", "ee", "eee", "eeee", "eeeee", "eeeeee" });
 
 
-            int resul12 = KthMissingPositiveNumber.FindKthPositive(new int[] { 2, 3, 4, 7, 11 }, 5);
-            int resul14 = KthMissingPositiveNumber.FindKthPositive(new int[] { 1, 2, 3, 4 }, 2);
+            //int resul12 = KthMissingPositiveNumber.FindKthPositive(new int[] { 2, 3, 4, 7, 11 }, 5);
+            //int resul14 = KthMissingPositiveNumber.FindKthPositive(new int[] { 1, 2, 3, 4 }, 2);
+
+
+            //string resul12 = LongestPalindromicSubstring.LongestPalindrome("bababd");
+            //string resul14 = LongestPalindromicSubstring.LongestPalindrome("cbbd");
+
+            #endregion
+
+            //bool resul12 = TwoStringArraysareEquivalent.ArrayStringsAreEqual(new string[]{ "ab", "c"}, new string[] { "a", "bc" });
+            //bool resul14 = TwoStringArraysareEquivalent.ArrayStringsAreEqual(new string[] { "a", "cb" }, new string[] { "ab", "c" });
+
+            #region APRIL 2021 Challenges
+
+            ////Q1
+            LeetApril2021Challenges leetApril2021Challenges = new LeetApril2021Challenges();
+            leetApril2021Challenges.AddToEnd(1);
+            leetApril2021Challenges.AddToEnd(2);
+            leetApril2021Challenges.AddToEnd(2);
+            leetApril2021Challenges.AddToEnd(1);
+
+            bool april1Result = leetApril2021Challenges.IsPalindrome(leetApril2021Challenges.node);
+            string wait = string.Empty;
+
+
+
+            #endregion
+
 
             Console.ReadLine();
         }
