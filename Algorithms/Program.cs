@@ -1443,9 +1443,21 @@ namespace Algorithms
             leetApril2021Challenges.AddToEnd(2);
             leetApril2021Challenges.AddToEnd(1);
 
-            bool april1Result = leetApril2021Challenges.IsPalindrome(leetApril2021Challenges.node);
-            string wait = string.Empty;
+            //bool april1Result = leetApril2021Challenges.IsPalindrome(leetApril2021Challenges.node);
+            //string wait = string.Empty;
 
+            ////Q11
+            Leetcodechallenge.April2021.TreeNode tree = LeetApril2021Challenges.CreateNewNode(1);
+            tree.left = LeetApril2021Challenges.CreateNewNode(2);
+            tree.right = LeetApril2021Challenges.CreateNewNode(3);
+            tree.left.left = LeetApril2021Challenges.CreateNewNode(4);
+            tree.left.right = LeetApril2021Challenges.CreateNewNode(5);
+            tree.left.left.left = LeetApril2021Challenges.CreateNewNode(7);
+            tree.right.right = LeetApril2021Challenges.CreateNewNode(6);
+            tree.right.right.right = LeetApril2021Challenges.CreateNewNode(8);
+
+            int april1Result = leetApril2021Challenges.DeepestLeavesSum(tree);
+            string wait = string.Empty;
 
 
             #endregion
