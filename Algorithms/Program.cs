@@ -49,6 +49,7 @@ using System.Collections;
 using Algorithms.Leetcodechallenge;
 using Algorithms.LinkedListSolution.Single;
 using Algorithms.Leetcodechallenge.April2021;
+using Algorithms.Solutions.LeetCode.Arrays;
 
 namespace Algorithms
 {
@@ -1437,33 +1438,57 @@ namespace Algorithms
             #region APRIL 2021 Challenges
 
             ////Q1
-            LeetApril2021Challenges leetApril2021Challenges = new LeetApril2021Challenges();
-            leetApril2021Challenges.AddToEnd(1);
-            leetApril2021Challenges.AddToEnd(2);
-            leetApril2021Challenges.AddToEnd(2);
-            leetApril2021Challenges.AddToEnd(1);
+            //LeetApril2021Challenges leetApril2021Challenges = new LeetApril2021Challenges();
+            ////leetApril2021Challenges.AddToEnd(1);
+            ////leetApril2021Challenges.AddToEnd(2);
+            ////leetApril2021Challenges.AddToEnd(2);
+            ////leetApril2021Challenges.AddToEnd(1);
 
-            //bool april1Result = leetApril2021Challenges.IsPalindrome(leetApril2021Challenges.node);
+            ////bool april1Result = leetApril2021Challenges.IsPalindrome(leetApril2021Challenges.node);
+            ////string wait = string.Empty;
+
+            //////Q11
+            //Leetcodechallenge.April2021.TreeNode tree = LeetApril2021Challenges.CreateNewNode(1);
+            //tree.left = LeetApril2021Challenges.CreateNewNode(2);
+            //tree.right = LeetApril2021Challenges.CreateNewNode(3);
+            //tree.left.left = LeetApril2021Challenges.CreateNewNode(4);
+            //tree.left.right = LeetApril2021Challenges.CreateNewNode(5);
+            //tree.left.left.left = LeetApril2021Challenges.CreateNewNode(7);
+            //tree.right.right = LeetApril2021Challenges.CreateNewNode(6);
+            //tree.right.right.right = LeetApril2021Challenges.CreateNewNode(8);
+
+            //int april1Result = leetApril2021Challenges.DeepestLeavesSum(tree);
             //string wait = string.Empty;
-
-            ////Q11
-            Leetcodechallenge.April2021.TreeNode tree = LeetApril2021Challenges.CreateNewNode(1);
-            tree.left = LeetApril2021Challenges.CreateNewNode(2);
-            tree.right = LeetApril2021Challenges.CreateNewNode(3);
-            tree.left.left = LeetApril2021Challenges.CreateNewNode(4);
-            tree.left.right = LeetApril2021Challenges.CreateNewNode(5);
-            tree.left.left.left = LeetApril2021Challenges.CreateNewNode(7);
-            tree.right.right = LeetApril2021Challenges.CreateNewNode(6);
-            tree.right.right.right = LeetApril2021Challenges.CreateNewNode(8);
-
-            int april1Result = leetApril2021Challenges.DeepestLeavesSum(tree);
-            string wait = string.Empty;
 
 
             #endregion
 
+            //getTime("BZA");
+            //getTime("BZB");
+            //getTime("AZB");
+            //A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            //getTime("AZGB");
+            //getTime("ZNND");
+
+            //27
+
+            #region Number of Matching Subsequences
+            string s1 = "abcde";
+            string[] words1 = { "a", "bb", "acd", "ace" };
+            int numMatResult1 = NumberofMatchingSubsequences.NumMatchingSubseq(s1, words1);
+
+            string s2 = "dsahjpjauf";
+            string[] words2 = { "ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax" };
+            int numMatResult2 = NumberofMatchingSubsequences.NumMatchingSubseq(s2, words2);
+
+            #endregion
+
+
+            string value = string.Empty;
+
 
             Console.ReadLine();
         }
+
     }
 }

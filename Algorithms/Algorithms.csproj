@@ -103,6 +103,7 @@
     <Compile Include="Leetcodechallenge\October\Day02\CombinationSum.cs" />
     <Compile Include="Leetcodechallenge\October\Day14\HouseRobberII.cs" />
     <Compile Include="Leetcodechallenge\October\Day16\Search2DMatrix.cs" />
+    <Compile Include="Leetcodechallenge\OpentheLock.cs" />
     <Compile Include="Leetcodechallenge\September\Day09\CompareVersionNumbers.cs" />
     <Compile Include="Leetcodechallenge\September\Day10\BullsandCows.cs" />
     <Compile Include="Leetcodechallenge\TwoStringArraysareEquivalent.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Solutions\KthLargestNumber.cs" />
     <Compile Include="Solutions\LeadaLifeCalculateProfit.cs" />
     <Compile Include="Solutions\Leaderofthearray.cs" />
+    <Compile Include="Solutions\LeetCode\Arrays\NumberofMatchingSubsequences.cs" />
     <Compile Include="Solutions\MakeArrayConsecutive_MissingNumbers_.cs" />
     <Compile Include="Solutions\MeetingRoom.cs" />
     <Compile Include="Solutions\NimGame.cs" />
@@ -185,6 +187,11 @@
     <Folder Include="Leetcodechallenge\May\Day27\" />
     <Folder Include="Leetcodechallenge\October\Day15\" />
     <Folder Include="LinkedListSolution\Double\" />
+    <Folder Include="Solutions\Hackrank\Arrays\" />
+    <Folder Include="Solutions\Hackrank\DP\" />
+    <Folder Include="Solutions\Hackrank\LinkedList\" />
+    <Folder Include="Solutions\LeetCode\DP\" />
+    <Folder Include="Solutions\LeetCode\LinkedList\" />
     <Folder Include="WIP\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

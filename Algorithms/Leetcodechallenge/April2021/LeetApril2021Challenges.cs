@@ -104,30 +104,22 @@ namespace Algorithms.Leetcodechallenge.April2021
 
         public int DeepestLeavesSum(TreeNode root)
         {
-            if(root == null)
-            {
-                return 0;
-            }
-
-            int lH = GetDeepestLeavesValue(root.left);
-            int rH = GetDeepestLeavesValue(root.right);
-
-            return GetDeepestLeavesValue(root.left) + ;
-            //int rH = DeepestLeavesSum(root.right);
+            return GetDeepestLeavesValue(root);// + GetDeepestLeavesValue(root.right);
         }
 
         public int GetDeepestLeavesValue(TreeNode root)
         {
             if (root == null)
             {
-                return 0;
+              return 0;
             }
 
-            int lH = DeepestLeavesSum(root.left);
-            int rH = DeepestLeavesSum(root.right);
+            int heightL = GetDeepestLeavesValue(root.left);
+            int heightR = GetDeepestLeavesValue(root.right);
 
-            return root.val;
-            //int rH = DeepestLeavesSum(root.right);
+            if (heightR > heightL)
+                return (heightR + 1);
+            else return (heightL + 1);
         }
 
         public static TreeNode CreateNewNode(int key)
