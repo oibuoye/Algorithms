@@ -8,23 +8,23 @@ namespace Algorithms.Solutions
 {
     public class Sorting
     {
-        public static int[] SelectionSorting(int[] arrayofNumbers)
+        public static int[] SelectionSorting(int[] nums)
         {
-            int n = arrayofNumbers.Length;
+            int n = nums.Length;
             for (int i = 0; i < n - 1; i++)
             {
                 for (int j = 0; j < n -1; j++)
                 {
-                    int temp = arrayofNumbers[j];
-                    if (arrayofNumbers[j] > arrayofNumbers[j + 1])
+                    int temp = nums[j];
+                    if (nums[j] > nums[j + 1])
                     {
-                        arrayofNumbers[j] = arrayofNumbers[j + 1];
-                        arrayofNumbers[j + 1] = temp;
+                        nums[j] = nums[j + 1];
+                        nums[j + 1] = temp;
                     }
                 }
             }
 
-            return arrayofNumbers;
+            return nums;
         }
 
         public static int[] BubbleSort(int[] arrayofNumbers)

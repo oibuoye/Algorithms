@@ -50,6 +50,11 @@ using Algorithms.Leetcodechallenge;
 using Algorithms.LinkedListSolution.Single;
 using Algorithms.Leetcodechallenge.April2021;
 using Algorithms.Solutions.LeetCode.Arrays;
+using Algorithms.Solutions.LeetCode.Others;
+using Algorithms.Solutions.Hackrank.Arrays;
+using Algorithms.Solutions.LeetCode.BS;
+using Algorithms.Solutions.LeetCode.Contest;
+using Algorithms.Solutions.LeetCode.Interview;
 
 namespace Algorithms
 {
@@ -968,7 +973,8 @@ namespace Algorithms
             //long n = 6;
             //string sVal = "kmretasscityylpdhuwjirnqimlkcgxubxmsxpypgzxtenweirknjtasxtvxemtwxuarabssvqdnktqadhyktagjxoanknhgilnm";
             //long n = 10;
-
+            //string sVal = "abcac";
+            //long n = 10;
             //long val = RepeatedString.repeatedString(sVal, n);
             #endregion
 
@@ -1463,32 +1469,195 @@ namespace Algorithms
 
             #endregion
 
-            //getTime("BZA");
-            //getTime("BZB");
-            //getTime("AZB");
-            //A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-            //getTime("AZGB");
-            //getTime("ZNND");
-
-            //27
-
             #region Number of Matching Subsequences
-            string s1 = "abcde";
-            string[] words1 = { "a", "bb", "acd", "ace" };
-            int numMatResult1 = NumberofMatchingSubsequences.NumMatchingSubseq(s1, words1);
+            //string s1 = "abcde";
+            //string[] words1 = { "a", "bb", "acd", "ace" };
+            //int numMatResult1 = NumberofMatchingSubsequences.NumMatchingSubseq(s1, words1);
 
-            string s2 = "dsahjpjauf";
-            string[] words2 = { "ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax" };
-            int numMatResult2 = NumberofMatchingSubsequences.NumMatchingSubseq(s2, words2);
+            //string s2 = "dsahjpjauf";
+            //string[] words2 = { "ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax" };
+            //int numMatResult2 = NumberofMatchingSubsequences.NumMatchingSubseq(s2, words2);
+
+            #endregion
+
+            #region Isomorphic Strings
+            //Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+            //All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+            //string s = "egg";
+            //string t = "add";
+            //string s1 = "foo";
+            //string t1 = "bar";
+            //string s2 = "paper";
+            //string t2 = "title";
+            //var canResult = IsomorphicStrings.IsIsomorphic(s, t);
+            //var canResult1 = IsomorphicStrings.IsIsomorphic(s1, t1);
+            //var canResult2 = IsomorphicStrings.IsIsomorphic(s2, t2);
+            #endregion
+
+            #region Median Finder
+            //MedianFinder obj = new MedianFinder();
+            //obj.AddNum(6);
+            //double param_1 = obj.FindMedian();
+            //obj.AddNum(10);
+            //double param_2 = obj.FindMedian();
+            //obj.AddNum(2);
+            //double param_3 = obj.FindMedian();
+            #endregion
+
+            #region Sales by Match
+            //int saleResult = SalesbyMatch.sockMerchant(7, new List<int> { 1, 2, 1, 2, 1, 3, 2 });
+            #endregion
+
+            #region Jumping On Clouds
+            //List<int> test1 = new List<int> { 0, 1, 0, 0, 0, 1, 0 };
+            //List<int> test2 = new List<int> { 0, 0, 1, 0, 0, 1, 0 };
+            //List<int> test3 = new List<int> { 0, 0, 0, 1, 0, 0 };
+            //int result1 = JumpingOnClouds.jumpingOnClouds(test1);
+            //int result2 = JumpingOnClouds.jumpingOnClouds(test2);
+            //int result3 = JumpingOnClouds.jumpingOnClouds(test3);
+            #endregion
+
+            #region Jumping On Clouds
+            //ConvertSortedArraytoBinarySearchTree binarySearchTree = new ConvertSortedArraytoBinarySearchTree();
+            //binarySearchTree.SortedArrayToBST(new int[] { -10, -3, 0, 5, 9 });
+            #endregion
+
+            #region Andela
+            //int numResult1 = numPlayers(4, new List<int> { 100, 40, 60, 80, 20 });
+            //int numResult2 = numPlayers(4, new List<int> { 2, 2, 3, 4, 5 });
+
+            //string reachResult1 = quicksol.ReachTheEnd(new List<string> { "..##", "#.##", "#..." }, 5);
+            //string reachResult2 = quicksol.ReachTheEnd(new List<string> { ".#", "#." }, 2);
+
+            #endregion
+
+            #region 2D array
+            //var f2d1 = new List<int>() { 1, 1, 1, 0, 0, 0 };
+            //var f2d2 = new List<int>() { 0, 7 };
+            //var f2d3 = new List<int>() { 0, 10 };
+            //var f2d4 = new List<int>() { 1, 4 };
+            //var f2d5 = new List<int>() { 1, 10 };
+            //var f2d6 = new List<int>() { 1, 10 };
+            //var marking = new List<List<int>>();
+            //marking.Add(f2d1);
+            //marking.Add(f2d2);
+            //marking.Add(f2d3);
+            //marking.Add(f2d4);
+            //marking.Add(f2d5);
+            //marking.Add(f2d5);
+            //marking.Add(f2d6);
+            //int response2d = _2DArray.hourglassSum(marking);
+            #endregion
+
+            #region Left array rotation
+            //var rotArray = new List<int>() { 1, 2, 3, 4, 5 };
+            //var rotArray2 = new List<int>() { 1, 2, 3 };
+            //List<int> rotResponse = LeftRotation.OprotLeft(rotArray, 4);
+            //List<int> rotResponse2 = LeftRotation.OprotLeft(rotArray2, 5);
+            #endregion
+
+            #region Build Array
+            //int[] rotArray = new int[] { 0, 2, 1, 5, 3, 4 };
+            //int[] rotArray2 = new int[] { 5, 0, 1, 2, 3, 4 };
+            //int[] rotResponse = BuildArray.TryBuildArray(rotArray);
+            //int[] rotResponse2 = BuildArray.TryBuildArray(rotArray2);
+            #endregion
+
+            #region Reverse Words
+            //string rotArray = "  Bob    Loves  Alice   ";
+            //string rotArray2 = "Alice does not even like bob";
+            //string rotResponse = ReverseWords.TryReverseWords(rotArray);
+            //string rotResponse2 = ReverseWords.TryReverseWords(rotArray2);
+            #endregion
+
+            #region Concatenation of Array
+            //int[] rotArray = new int[] { 1, 2, 1 };
+            //int[] rotArray2 = new int[] { 1, 3, 2, 1 };
+            //int[] rotResponse = ConcatenationofArray.GetConcatenation(rotArray);
+            //int[] rotResponse2 = ConcatenationofArray.GetConcatenation(rotArray2);
+            #endregion
+
+            #region Valid words
+            //string rotArray = "cat and  dog";
+            //string rotArray2 = "!this  1-s b8d!";
+            //int rotResponse = WeeklyContest.CountValidWords(rotArray);
+            //int rotResponse2 = WeeklyContest.CountValidWords(rotArray2);
+
+            //string[] rotArray = new string[] { "d", "b", "c", "b", "c", "a" };
+            //string[] rotArray2 = new string[] { "aaa", "aa", "a" };
+            //string[] rotArray3 = new string[] { "a", "b", "a" };
+            //string rotResponse = WeeklyContest.KthDistinct(rotArray, 2);
+            //string rotResponse2 = WeeklyContest.KthDistinct(rotArray2, 1);
+            //string rotResponse3 = WeeklyContest.KthDistinct(rotArray3, 3);
+
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 1, 3, 2 };
+            //arr[1] = new int[] { 4, 5, 2 };
+            //arr[2] = new int[] { 2, 4, 3 };
+
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 1, 5, 3 };
+            //arr[1] = new int[] { 1, 5, 1 };
+            //arr[2] = new int[] { 6, 6, 5 };
+
+            int[][] arr = new int[3][];
+            arr[0] = new int[] { 1, 3, 2 };
+            arr[1] = new int[] { 4, 5, 2 };
+            arr[2] = new int[] { 1, 5, 5 };
+
+
+
+            int rotResponse3 = WeeklyContest.MaxTwoEvents(arr);
 
             #endregion
 
 
+            #region Pascal Triangle
+            //IList<IList<int>> rotResponse = PascalTriangle.Generate(1);
+            //IList<IList<int>> rotResponse2 = PascalTriangle.Generate(2);
+            //IList<IList<int>> rotResponse3 = PascalTriangle.Generate(3);
+            //IList<IList<int>> rotResponse4 = PascalTriangle.Generate(4);
+            //IList<IList<int>> rotResponse5 = PascalTriangle.Generate(5);
+            //IList<IList<int>> rotResponse6 = PascalTriangle.Generate(6);
+            #endregion
+
+            #region Duplicate Characters
+            ////string dupLongResponse1 = DuplicateCharacters.LongestDupSubstringSolution1("banana");
+            ////string dupLongResponse2 = DuplicateCharacters.LongestDupSubstringSolution1("AABAACAADAABAAABAA");
+            //string dupLongResponse1 = DuplicateCharacters.LongestDupSubstringSolution2("banana");
+            ////string dupLongResponse2 = DuplicateCharacters.LongestDupSubstringSolution2("AABAACAADAABAAABAA");
+            //String txt = "GEEKS FOR GEEKS";
+            //String pat = "GEEK";
+            //// A prime number 
+            //int q = 11;
+            //DuplicateCharacters.RKASearch(pat, txt, q);
+            #endregion
+
+            #region Pascal Triangle
+            //IList<IList<int>> rotResponse = PascalTriangle.Generate(1);
+            //IList<IList<int>> rotResponse2 = PascalTriangle.Generate(2);
+            //IList<IList<int>> rotResponse3 = PascalTriangle.Generate(3);
+            //IList<IList<int>> rotResponse4 = PascalTriangle.Generate(4);
+            //IList<IList<int>> rotResponse5 = PascalTriangle.Generate(5);
+            //IList<IList<int>> rotResponse6 = PascalTriangle.Generate(6);
+            #endregion
+
+
+
             string value = string.Empty;
 
+            //string test1 = "abcd";
+            //string test2 = "abcde";
+            //string test1 = "ae";
+            //string test2 = "aea";
+            //var res = Finddif(test1, test2);
+
+            //var erroRes = FindErrors(new int[] { 1, 2, 3, 2 });
 
             Console.ReadLine();
         }
-
     }
 }
+
+
+
