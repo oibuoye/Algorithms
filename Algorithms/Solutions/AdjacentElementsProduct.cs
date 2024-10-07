@@ -9,10 +9,6 @@ namespace Algorithms.Solutions
     public class AdjacentElementsProduct
     {
 
-        //int[] inputArray = { 6, 2, 3, 8 };
-
-        //int adjaResult = AdjacentElementsProduct.Product(inputArray);
-
         public static int Product(int[] inputArray)
         {
             //1st solution

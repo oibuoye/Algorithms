@@ -64,5 +64,18 @@ namespace Algorithms.Solutions
             return true;
         }
 
+        public static bool IsPalindrome(int x)
+        {
+            string numb = x.ToString();
+            for(int i = 0; i < numb.Length; i++)
+            {
+                if(numb[i] != numb[numb.Length - (1 + i)])
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }

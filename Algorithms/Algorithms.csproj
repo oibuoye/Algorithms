@@ -60,16 +60,23 @@
   <ItemGroup>
     <Compile Include="BinarySearchTree\BinarySearchTree.cs" />
     <Compile Include="BinarySearchTree\Solutions\CheckIsTreeSymmetric.cs" />
+    <Compile Include="BinarySearchTree\Solutions\BreathFirstTree.cs" />
+    <Compile Include="BinarySearchTree\Solutions\DepthFirstTree.cs" />
     <Compile Include="BinarySearchTree\Solutions\LeftSkewedTree.cs" />
     <Compile Include="BinarySearchTree\Solutions\TreeOperations.cs" />
     <Compile Include="BinarySearchTree\Solutions\RightSkewedTree.cs" />
     <Compile Include="CoderByte\Challenges.cs" />
+    <Compile Include="Codility\Solutions.cs" />
     <Compile Include="DynamicProgramming\Abbreviation.cs" />
     <Compile Include="DynamicProgramming\ChangeCoin.cs" />
     <Compile Include="DynamicProgramming\CoinsChangeV2.cs" />
     <Compile Include="DynamicProgramming\CountSubsequencesofType.cs" />
     <Compile Include="DynamicProgramming\LongestSubstring.cs" />
     <Compile Include="DynamicProgramming\MaxArraySum.cs" />
+    <Compile Include="HackerRank\HackerArraySolutions.cs" />
+    <Compile Include="LeetcodeArray\ArraySolutions.cs" />
+    <Compile Include="LeetcodeArray\LinkedListSolutions.cs" />
+    <Compile Include="LeetcodeArray\StackSolutions.cs" />
     <Compile Include="Leetcodechallenge\April2021\LeetApril2021Challenges.cs" />
     <Compile Include="Leetcodechallenge\April\Day01\SingleNumberSolution.cs" />
     <Compile Include="Leetcodechallenge\April\Day02\HappyNumberSolution.cs" />
@@ -92,6 +99,9 @@
     <Compile Include="Leetcodechallenge\April\Day22\SubarraySumEqualsK.cs" />
     <Compile Include="Leetcodechallenge\April\Day25\JumpGameSolution.cs" />
     <Compile Include="Leetcodechallenge\April\Day27\MaximalSquareSolution.cs" />
+    <Compile Include="Leetcodechallenge\CarPoolingSolution.cs" />
+    <Compile Include="Leetcodechallenge\CheckRecordSolution.cs" />
+    <Compile Include="Leetcodechallenge\Contest311Solution.cs" />
     <Compile Include="Leetcodechallenge\KthMissingPositiveNumber.cs" />
     <Compile Include="Leetcodechallenge\LongestPalindromicSubstring.cs" />
     <Compile Include="Leetcodechallenge\May\Day01\FirstBadVersionSolution.cs" />
@@ -104,9 +114,12 @@
     <Compile Include="Leetcodechallenge\October\Day14\HouseRobberII.cs" />
     <Compile Include="Leetcodechallenge\October\Day16\Search2DMatrix.cs" />
     <Compile Include="Leetcodechallenge\OpentheLock.cs" />
+    <Compile Include="Leetcodechallenge\ReverseStrSolutioniii.cs" />
+    <Compile Include="Leetcodechallenge\ReverseStrSolution.cs" />
     <Compile Include="Leetcodechallenge\September\Day09\CompareVersionNumbers.cs" />
     <Compile Include="Leetcodechallenge\September\Day10\BullsandCows.cs" />
     <Compile Include="Leetcodechallenge\TwoStringArraysareEquivalent.cs" />
+    <Compile Include="Leetcodeweeklycontest\Contest95.cs" />
     <Compile Include="Leetcodeweeklycontest\Week186Solution.cs" />
     <Compile Include="LinkedListSolution\Check.cs" />
     <Compile Include="LinkedListSolution\Single\AddTwoNumbers.cs" />
@@ -149,6 +162,7 @@
     <Compile Include="Solutions\LeetCode\Arrays\FindKClosestElements.cs" />
     <Compile Include="Solutions\LeetCode\Arrays\NumberofMatchingSubsequences.cs" />
     <Compile Include="Solutions\LeetCode\Arrays\ReverseWords.cs" />
+    <Compile Include="Solutions\LeetCode\Arrays\Subarraysum.cs" />
     <Compile Include="Solutions\LeetCode\BS\ConvertSortedArraytoBinarySearchTree.cs" />
     <Compile Include="Solutions\LeetCode\Contest\WeeklyContest.cs" />
     <Compile Include="Solutions\LeetCode\Interview\PascalTriangle.cs" />

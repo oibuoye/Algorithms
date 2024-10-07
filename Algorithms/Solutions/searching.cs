@@ -33,5 +33,33 @@ namespace Algorithms.Solutions
             return -1;
         }
 
+        public static int BinarySearch(int[] arr, int start, int end, int key)
+        {
+            if(start > end)
+            {
+                return -1;
+            }
+
+            if(end == 0)
+            {
+                end = arr.Length - 1;
+            }
+
+            int mid = (start + end) / 2;
+            if (key == arr[mid])
+            {
+                return key;
+            }
+
+            if(mid < key)
+            {
+                return BinarySearch(arr, mid + 1, end, key);
+            }
+            else
+            {
+                return BinarySearch(arr, start, mid - 1, key);
+            }
+        }
+
     }
 }

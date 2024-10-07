@@ -83,5 +83,143 @@ namespace Algorithms.Solutions
 
         }
 
+        public static void ArrayRightRotation2(int[] nums, int k)
+        {
+            if(nums.Length == 1)
+            { return; }
+            if (nums.Length != k)
+            {
+                if (nums.Length < k)
+                {
+                    int temp = k / nums.Length;
+                    k -= (temp * nums.Length);
+                }
+
+                int[] tempArray = new int[k];
+                int tempCounter = 0;
+
+                for (int i = k -1; i < nums.Length; i++)
+                {
+                    tempArray[tempCounter] = nums[i];
+                    tempCounter++;
+                }
+
+                int counter = nums.Length - 1;
+                for (int i = k-1; i >= 0; i--)
+                {
+                    nums[counter] = nums[i];
+                    counter--;
+                }
+
+                for (int j = 0; j < tempCounter; j++)
+                {
+                    nums[j] = tempArray[j];
+                }
+            }
+        }
+
+        public static void ArrayRightRotation3(int[] nums, int k)
+        {
+            if (nums.Length == 1)
+            { return; }
+            if (nums.Length != k)
+            {
+                if (nums.Length < k)
+                {
+                    int temp = k / nums.Length;
+                    k -= (temp * nums.Length);
+                }
+
+                int[] tempArray = new int[k];
+                int counter = 0;
+
+                for (int i = nums.Length - 1; i >= 0; i--)
+                {
+                    if (counter < k)
+                    {
+                        tempArray[counter] = nums[i];
+                        counter++;
+                    }
+                    else
+                    {
+                        nums[i + k] = nums[i];
+                    }
+                }
+
+                for (int j = 0; j < tempArray.Length; j++)
+                {
+                    k--;
+                    nums[k] = tempArray[j];
+                }
+            }
+        }
+
+        public static void MoveZeroes(int[] nums)
+        {
+            if(nums.Length == 0)
+            {
+                return;
+            }
+
+            List<int> zeros = new List<int>();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 0)
+                {
+                    zeros.Add(i);
+                }
+                else
+                {
+                    if(zeros.Count != 0)
+                    {
+                        nums[zeros[0]] = nums[i];
+                        nums[i] = 0;
+
+                        zeros.RemoveAt(0);
+                        zeros.Add(i);
+                    }
+                }
+            }
+        }
+
+        public static int[] TwoSum(int[] numbers, int target)
+        {
+            Dictionary<int, int> dic = new Dictionary<int, int>();
+            dic.Add(numbers[0], 1);
+            for (int i = 1;i < numbers.Length; i++)
+            {
+                int temp = target - numbers[i];
+                if (dic.ContainsKey(temp))
+                {
+                    return new int[] { dic[temp], i+1 };
+                }
+                else
+                {
+                    if (!dic.ContainsKey(numbers[i]))
+                    {
+                        dic.Add(numbers[i], i + 1);
+                    }
+                }
+            }
+            return new int[] { };
+        }
+
+        public static int[] TwoSumGreatSol(int[] numbers, int target)
+        {
+            int low = 0, high = numbers.Length - 1;
+            while (numbers[low] + numbers[high] != target)
+            {
+                if(numbers[low] + numbers[high] < target)
+                {
+                    low++;
+                }
+                else
+                {
+                    high--;
+                }
+            }
+            return new int[] { low + 1, high + 1};
+        }
+
     }
 }

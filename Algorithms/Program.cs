@@ -55,6 +55,10 @@ using Algorithms.Solutions.Hackrank.Arrays;
 using Algorithms.Solutions.LeetCode.BS;
 using Algorithms.Solutions.LeetCode.Contest;
 using Algorithms.Solutions.LeetCode.Interview;
+using Algorithms.LeetcodeArray;
+using ListNode = Algorithms.LeetcodeArray.ListNode;
+using Algorithms.HackerRank;
+using System.Net;
 
 namespace Algorithms
 {
@@ -62,6 +66,24 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            //int a1 = 1;
+            //int a2 = 1;
+            //int b = a1++;
+            //int c = ++a2;
+            //string resa1 = string.Empty;
+            #region Inheritance Testing
+
+            //ClassRed newObj = new ClassYellow();
+            //string result = newObj.Print();
+            //const int a = 8;
+            //const int b = 7 + a;
+
+            //Sample1 obj = new Sample1();
+            //string res = obj.Print();
+
+            #endregion
+
+
             #region
             #endregion
 
@@ -91,7 +113,7 @@ namespace Algorithms
             //int[] dif = { 0, 3, 1, 1, 100 };
             //int[] dif = { -2, 1, 1, 4, -1, 5 };
             //int maxResult = MaxArraySum.maxSubsetSum(dif);
-            //int maxResult1 = MaxArraySum.maxSubsetSum1(dif);
+            //int maxResult1 = MaxArraySum.maxSubsetSum(dif);
             #endregion
 
             #region Binary Search Tree:: Right skewed tree, Left skewed tree, CheckIsSameTree
@@ -791,7 +813,7 @@ namespace Algorithms
 
             #region Longest substring without repeating characters
             //string wordTest = "abcbacagad";
-            ////string wordTest = "abcbadc";
+            //string wordTest = "abcbadc";
             //int maxL = LongestSubstring.longestSubstringCharacters(wordTest);
             #endregion
 
@@ -949,9 +971,8 @@ namespace Algorithms
             #endregion
 
             #region Sorting: Bubble, Selection and Insertion
-            //int[] arr = { 2, 1 };
             //int[] arr1 = { 2, 1 };
-            //int[] arr2 = { 2, 1 };
+            //int[] arr2 = { 2, 1, 4, 3, 6 };
 
             //int[] max = Sorting.SelectionSorting(arr);
             //int[] max1 = Sorting.BubbleSort(arr1);
@@ -959,6 +980,8 @@ namespace Algorithms
 
             //int[] arr22 = { 2, 1 , 4, 3, 6, 8, 0};
             //int[] max1 = Sorting.BubbleSortp(arr22);
+
+            //string waitCounter = string.Empty;
             #endregion
 
             #region Compare triplets
@@ -1027,8 +1050,13 @@ namespace Algorithms
             #endregion
 
             #region Maximum Subset Array solution
-            ////int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            //int[] arr = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            //int[] arr = { 9, -4, -7, 9 };
             //int maxResult = MaximumSubarraySolution.maxSubsetArray(arr);
+            //int maxResult1 = MaximumSubarraySolution.maxSubsetArray1(arr);
+            //int maxResult22 = MaximumSubarraySolution.maxSubsetArrayCircular(arr);
+            //int maxResult1 = MaximumSubarraySolution.maxSubsetArray1(arr);
+            string maxsum = string.Empty;
             #endregion
 
             #region Move zeroes solution
@@ -1039,8 +1067,8 @@ namespace Algorithms
 
             #region Buy and sell stocks
             //int[] arr = { 7, 1, 5, 3, 6, 4 };
-            //int[] arr = { 1, 2, 3, 4, 5 };
-            //int[] arr = { 7, 6, 4, 3, 1 };
+            ////int[] arr = { 1, 2, 3, 4, 5 };
+            ////int[] arr = { 7, 6, 4, 3, 1 };
             //int result = BestTimetoBuyandSellStock.MaxProfit(arr);
             #endregion
 
@@ -1242,12 +1270,12 @@ namespace Algorithms
 
             #region Check Straight Line Solution
             //int[][] arr = new int[6][];
-            ////arr[0] = new int[] { 1, 1 };
-            ////arr[1] = new int[] { 2, 2 };
-            ////arr[2] = new int[] { 3, 4 };
-            ////arr[3] = new int[] { 4, 5 };
-            ////arr[4] = new int[] { 5, 6 };
-            ////arr[5] = new int[] { 7, 7 };
+            //arr[0] = new int[] { 1, 1 };
+            //arr[1] = new int[] { 2, 2 };
+            //arr[2] = new int[] { 3, 4 };
+            //arr[3] = new int[] { 4, 5 };
+            //arr[4] = new int[] { 5, 6 };
+            //arr[5] = new int[] { 7, 7 };
 
             //arr[0] = new int[] { 1, 2 };
             //arr[1] = new int[] { 2, 3 };
@@ -1256,7 +1284,7 @@ namespace Algorithms
             //arr[4] = new int[] { 5, 6 };
             //arr[5] = new int[] { 6, 7 };
 
-            //var result = CheckStraightLineSolution.CheckStraightLine(arr);
+            ///var result = CheckStraightLineSolution.CheckStraightLine(arr);
             #endregion
 
             #region Valid Perfect Square Solution
@@ -1339,13 +1367,14 @@ namespace Algorithms
             #endregion
 
             #region Rotate Array
-            //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-            //int d = 2;
-            //int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-            //int d = 3;
-            //int[] arr = { 1, 2, 3 };
-            //int d = 3;
-            //int[] result1 = ArrayOperation.ArrayRightRotation(arr, d);
+            //int[] arr = { 1, 2 };
+            //int d = 5;
+            ////int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
+            ////int d = 3;
+            ////int[] arr = { 1, 2, 3 };
+            ////int d = 2;
+            //////int[] result1 = ArrayOperation.ArrayRightRotation(arr, d);
+            //ArrayOperation.ArrayRightRotation3(arr, d);
             #endregion
 
             #region HouseRobberII: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night. Given a list of non - negative integers nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
@@ -1438,8 +1467,10 @@ namespace Algorithms
 
             #endregion
 
-            //bool resul12 = TwoStringArraysareEquivalent.ArrayStringsAreEqual(new string[]{ "ab", "c"}, new string[] { "a", "bc" });
+            #region Two String Arrays are Equivalent
+            //bool resul12 = TwoStringArraysareEquivalent.ArrayStringsAreEqual(new string[] { "ab", "c" }, new string[] { "a", "bc" });
             //bool resul14 = TwoStringArraysareEquivalent.ArrayStringsAreEqual(new string[] { "a", "cb" }, new string[] { "ab", "c" });
+            #endregion
 
             #region APRIL 2021 Challenges
 
@@ -1600,14 +1631,12 @@ namespace Algorithms
             //arr[1] = new int[] { 1, 5, 1 };
             //arr[2] = new int[] { 6, 6, 5 };
 
-            int[][] arr = new int[3][];
-            arr[0] = new int[] { 1, 3, 2 };
-            arr[1] = new int[] { 4, 5, 2 };
-            arr[2] = new int[] { 1, 5, 5 };
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 1, 3, 2 };
+            //arr[1] = new int[] { 4, 5, 2 };
+            //arr[2] = new int[] { 1, 5, 5 };
 
-
-
-            int rotResponse3 = WeeklyContest.MaxTwoEvents(arr);
+            //int rotResponse3 = WeeklyContest.MaxTwoEvents(arr);
 
             #endregion
 
@@ -1642,20 +1671,810 @@ namespace Algorithms
             //IList<IList<int>> rotResponse6 = PascalTriangle.Generate(6);
             #endregion
 
+            #region Car pooling Solution
+            //int[][] arr = new int[2][];
+            //arr[0] = new int[] { 2, 1, 3 };
+            //arr[1] = new int[] { 3, 3, 7 };
+
+            //int[][] arr1 = new int[2][];
+            //arr1[0] = new int[] { 2, 1, 5 };
+            //arr1[1] = new int[] { 3, 3, 7 };
+
+            //int[][] arr2 = new int[3][];
+            //arr2[0] = new int[] { 7, 5, 6 };
+            //arr2[1] = new int[] { 6, 7, 8 };
+            //arr2[2] = new int[] { 10, 1, 6 };
+
+            //int[][] arr2 = new int[5][];
+            //arr2[0] = new int[] { 8, 2, 3 };
+            //arr2[1] = new int[] { 4, 1, 3 };
+            //arr2[2] = new int[] { 1, 3, 6 };
+            //arr2[3] = new int[] { 8, 4, 6 };
+            //arr2[4] = new int[] { 4, 4, 8 };
 
 
-            string value = string.Empty;
 
-            //string test1 = "abcd";
-            //string test2 = "abcde";
-            //string test1 = "ae";
-            //string test2 = "aea";
-            //var res = Finddif(test1, test2);
+            //var result = CarPoolingSolution.CarPooling(arr, 4);
+            //var result1 = CarPoolingSolution.CarPooling(arr1, 5);
+            //var result2 = CarPoolingSolution.CarPooling(arr2, 12);
 
-            //var erroRes = FindErrors(new int[] { 1, 2, 3, 2 });
+            // string[] arr = new string[] { "four", "ace", "ten" };
+            //string resp = ArrayChallenge(arr);
+
+            //solve(12.00, 20, 8);
+            #endregion
+
+            #region Reserved string
+
+            //string rev1 = ReverseStrSolution.ReverseStr("abcdefg", 2);
+            //string rev2 = ReverseStrSolution.ReverseStr("abcd", 4);
+            //string rev3 = ReverseStrSolution.ReverseStr("abcdefg", 4);
+            //string rev4 = ReverseStrSolution.ReverseStr("hyzqyljrnigxvdtneasepfahmtyhlohwxmkqcdfehybknvdmfrfvtbsovjbdhevlfxpdaovjgunjqlimjkfnqcqnajmebeddqsgl", 39);
+
+            #endregion
+
+            #region LeetCode Array
+            //var arraySum = ArraySolutions.RunningSum(new int[] { 1, 2, 3, 4 });
+
+            //int[][] arr = new int[2][];
+            //arr[0] = new int[] { 1, 2, 3 };
+            //arr[1] = new int[] { 3, 2, 1 };
+            //var arraySum = ArraySolutions.MaximumWealth(arr);
+
+            //var arraySum = ArraySolutions.CountBits(5);
+
+            //var arraySum = ArraySolutions.IsSubsequence("abc", "ahbgdc");
+            //var arraySum1 = ArraySolutions.IsSubsequence("axc", "ahbgdc");
+
+            //var resp = ArraySolutions.NumberOfArithmeticSlices(new int[] { 1, 2, 3, 4, 5 });
+            //var resp1 = ArraySolutions.NumberOfArithmeticSlices(new int[] { 1 });
+
+            //var resp = ArraySolutions.ChampagneTower(1, 1, 1);
+            //var resp1 = ArraySolutions.ChampagneTower(2, 1, 1);
+            //var resp2 = ArraySolutions.ChampagneTower(100000009, 33, 17);
+
+            ///Incomplete RemoveDuplicateLetters///
+            //string result1 = ArraySolutions.RemoveDuplicateLetters("bcabc");
+            //string result2 = ArraySolutions.RemoveDuplicateLetters("cbacdcbc");
+
+            ///Not working yet///
+            //int[][] arr1 = new int[4][];
+            //arr1[0] = new int[] { 10, 20 };
+            //arr1[1] = new int[] { 30, 200 };
+            //arr1[2] = new int[] { 400, 50 };
+            //arr1[3] = new int[] { 30, 20 };
+
+            //int[][] arr2 = new int[6][];
+            //arr2[0] = new int[] { 259, 770 };
+            //arr2[1] = new int[] { 448, 54 };
+            //arr2[2] = new int[] { 926, 667 };
+            //arr2[3] = new int[] { 184, 139 };
+            //arr2[4] = new int[] { 840, 118 };
+            //arr2[5] = new int[] { 577, 469 };
+
+            //int[][] arr3 = new int[8][];
+            //arr3[0] = new int[] { 515, 563 };
+            //arr3[1] = new int[] { 451, 713 };
+            //arr3[2] = new int[] { 537, 709 };
+            //arr3[3] = new int[] { 343, 819 };
+            //arr3[4] = new int[] { 855, 779 };
+            //arr3[5] = new int[] { 457, 60 };
+            //arr3[6] = new int[] { 650, 359 };
+            //arr3[7] = new int[] { 631, 42 };
+
+            //var arraySum = ArraySolutions.TwoCitySchedCost(arr1);
+            //var arraySum2 = ArraySolutions.TwoCitySchedCost(arr2);
+            //var arraySum3 = ArraySolutions.TwoCitySchedCost(arr3);
+
+            //var arraySum3 = ArraySolutions.FindSubsequences(new int[] { 4, 6, 7, 7 });
+            //var arraySum3 = ArraySolutions.FindSubsequences(new int[] { 4, 6, 7, 7 });
+
+
+            //var arraySum3 = ArraySolutions.GetCommon(new int[] { 1, 1, 2 }, new int[] { 2, 4 });
+
+            //var arraySum3 = ArraySolutions.MinOperations(new int[] { 4, 3, 1, 4 }, new int[] { 1, 3, 7, 1 }, 3);
+
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 5, 7, 3, 9, 4, 9, 8, 3, 1 };
+            //arr[1] = new int[] { 1, 2, 2, 4, 4, 1 };
+            //arr[2] = new int[] { 1, 2, 3 };
+            //int[][] arr = new int[2][];
+            //arr[0] = new int[] { 5, 5 };
+            //arr[1] = new int[] { 2, 2 };
+            //var arraySum = ArraySolutions.HighestCard(arr);
+
+
+            //int result66 = ArraySolutions.solution(new int[] { 1, 3, 5, 2, 8, 7 }, new int[] { 7, 1, 9, 8, 5, 7 });
+            //int result666 = ArraySolutions.solution(new int[] { 1, 1, 1, 1 }, new int[] { 1, 2, 3, 4 });
+            //int result6666 = ArraySolutions.solution(new int[] { 3, 5, 0, 2, 4 }, new int[] { 1, 3, 10, 6, 7 });
+
+
+            //int result77 = ArraySolutions.LengthOfLastWord("   fly me   to   the moon  ");
+
+            //string score1 = ArraySolutions.StoneGameIII(new int[] { 1, 2, 3, 7 });
+            //string score11 = ArraySolutions.StoneGameIII(new int[] { 1, 2, 3, -9 });
+            //string score111 = ArraySolutions.StoneGameIII(new int[] { 1, 2, 3, 6 });
+            //string score1111 = ArraySolutions.StoneGameIII(new int[] { -1, -2, -3 });
+            //int res = Sorting.BuyChoco(new int[] { 25, 24}, 92);
+            //int res = Sorting.MinExtraChar("leetscode", new string[] { "leet", "code", "leetcode" });
+            //int res1 = Sorting.MinExtraChar("sayhelloworld", new string[] { "hello", "world" });
+            //int res11 = Sorting.MinExtraChar("azvzulhlwxwobowijiyebeaskecvtjqwkmaqnvnaomaqnvf", new string[] { "na", "i", "edd", "wobow", "kecv", "b", "n", "or", "jj", "zul", "vk", "yeb", "qnfac", "azv", "grtjba", "yswmjn", "xowio", "u", "xi", "pcmatm", "maqnv" });
+
+            //Turing Test
+            //int baseIte = Sorting.EvenNumber(new int[] { 1, 4, 2, 5 });
+
+            var score1 = ArraySolutions.ThreeSum(new int[] { 1, 2, 3, 7 });
+
+            string findsub = string.Empty;
+
+            #endregion
+
+            #region LeetCode Linked List
+            //ListNode node = new ListNode(3);
+            //node.next = new ListNode(2);
+            //node.next.next = new ListNode(0);
+            //node.next.next.next = new ListNode(-4);
+            //bool response = LinkedListSolutions.HasCycle(node);
+
+            //ListNode node = new ListNode(1);
+            //node.next = new ListNode(3);
+            //node.next.next = new ListNode(5);
+
+            //ListNode node1 = new ListNode(2);
+            //node1.next = new ListNode(4);
+            //node1.next.next = new ListNode(6);
+            //ListNode response = new LinkedListSolutions().MergeTwoLists(node, node1);
+
+            //ListNode node = new ListNode(-9);
+            //node.next = new ListNode(3);
+
+            //ListNode node1 = new ListNode(5);
+            //node1.next = new ListNode(7);
+            //ListNode response = new LinkedListSolutions().MergeTwoLists(node, node1);
+
+            ///Incomplete RotateRight///
+            //ListNode node = new ListNode(1);
+            //node.next = new ListNode(2);
+            //node.next.next = new ListNode(3);
+            //node.next.next.next = new ListNode(4);
+            //node.next.next.next.next = new ListNode(5);
+            //ListNode response = new LinkedListSolutions().RotateRight(node, 2);
+
+            //ListNode node = new ListNode(1);
+            //node.next = new ListNode(2);
+            //node.next.next = new ListNode(3);
+            //node.next.next.next = new ListNode(4);
+            //node.next.next.next.next = new ListNode(5);
+            //var response = new LinkedListSolutions().RemoveNthFromEnd(node, 1);
+
+            //ListNode node = new ListNode(1);
+            //node.next = new ListNode(0);
+            //node.next.next = new ListNode(0);
+            //node.next.next.next = new ListNode(1);
+            //node.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next.next = new ListNode(1);
+            //node.next.next.next.next.next.next.next = new ListNode(1);
+            //node.next.next.next.next.next.next.next.next = new ListNode(1);
+            //node.next.next.next.next.next.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next.next.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next.next.next.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(0);
+            //node.next.next.next.next.next.next.next.next.next.next.next.next.next.next = new ListNode(0);
+            //var response = new LinkedListSolutions().GetDecimalValue(node);
+
+
+            //ListNode node = new ListNode(4);
+            //node.next = new ListNode(5);
+            //node.next.next = new ListNode(1);
+            //node.next.next.next = new ListNode(9);
+            //new LinkedListSolutions().ReverseList(node);
+
+
+            #endregion
+
+            #region HackerRank Array
+
+            #region Queen's Attack
+
+            //var f1 = new List<int>() { 0, 5 };
+            //var f2 = new List<int>() { 0, 7 };
+            //var f3 = new List<int>() { 0, 10 };
+            //var f4 = new List<int>() { 1, 4 };
+            //var f5 = new List<int>() { 1, 10 };
+            //var marking = new List<List<int>>();
+            //marking.Add(f1);
+            //marking.Add(f2);
+            //marking.Add(f3);
+            //marking.Add(f4);
+            //marking.Add(f5);
+
+            //var arraySum = HackerArraySolutions.queensAttack(4, 0, 4, 4, new List<List<int>> { });
+            #endregion
+
+            #region Hour's Glass
+
+            //var glassessCase1 = new List<List<int>>();
+            //glassessCase1.Add(new List<int>() { -9, -9, -9, 1, 1, 1 });
+            //glassessCase1.Add(new List<int>() { 0, -9, 0, 4, 3, 2 });
+            //glassessCase1.Add(new List<int>() { -9, -9, -9, 1, 2, 3 });
+            //glassessCase1.Add(new List<int>() { 0, 0, 8, 6, 6, 0 });
+            //glassessCase1.Add(new List<int>() { 0, 0, 0, -2, 0, 0 });
+            //glassessCase1.Add(new List<int>() { 0, 0, 1, 2, 4, 0 });
+
+            //var hourGlassSumCase1 = HackerArraySolutions.hourglassSum(glassessCase1);
+
+
+            //var glassessCase2 = new List<List<int>>();
+            //glassessCase2.Add(new List<int>() { 1, 1, 1, 0, 0, 0 });
+            //glassessCase2.Add(new List<int>() { 0, 1, 0, 0, 0, 0 });
+            //glassessCase2.Add(new List<int>() { 1, 1, 1, 0, 0, 0 });
+            //glassessCase2.Add(new List<int>() { 0, 0, 2, 4, 4, 0 });
+            //glassessCase2.Add(new List<int>() { 0, 0, 0, 2, 0, 0 });
+            //glassessCase2.Add(new List<int>() { 0, 0, 1, 2, 4, 0 });
+
+            //var hourGlassSumCase2 = HackerArraySolutions.hourglassSum(glassessCase2);
+
+
+            //var glassessCase3 = new List<List<int>>();
+            //glassessCase3.Add(new List<int>() { -1, -1, 0, -9, -2, -2 });
+            //glassessCase3.Add(new List<int>() { -2, -1, -6, -8, -2, -5 });
+            //glassessCase3.Add(new List<int>() { -1, -1, -1, -2, -3, -4 });
+            //glassessCase3.Add(new List<int>() { -1, -9, -2, -4, -4, -5 });
+            //glassessCase3.Add(new List<int>() { -7, -3, -3, -2, -9, -9 });
+            //glassessCase3.Add(new List<int>() { -1, -3, -1, -2, -4, -5 });
+
+            //var hourGlassSumCase3 = HackerArraySolutions.hourglassSum(glassessCase3);
+
+
+            #endregion
+
+            #region Minimum Bribe
+
+            //HackerArraySolutions.minimumBribes(new List<int>() { 2, 1, 5, 3, 4 });
+            //HackerArraySolutions.minimumBribes(new List<int>() { 2, 5, 1, 3, 4 });
+
+            #endregion
+
+            #region Minimum Swaps
+
+            //HackerArraySolutions.minimumSwaps(new int[] { 4, 3, 1, 2 });
+            //HackerArraySolutions.minimumSwaps(new int[] { 7, 1, 3, 2, 4, 5, 6 });
+
+            #endregion
+
+            #region Array Manipulation
+
+            //var queries = new List<List<int>>();
+            //queries.Add(new List<int>() { 1, 2, 100 });
+            //queries.Add(new List<int>() { 2, 5, 100 });
+            //queries.Add(new List<int>() { 3, 4, 100 });
+
+            //var queries2 = new List<List<int>>();
+            //queries2.Add(new List<int>() { 1, 5, 3 });
+            //queries2.Add(new List<int>() { 4, 8, 7 });
+            //queries2.Add(new List<int>() { 6, 9, 1 });
+
+            //var queries3 = new List<List<int>>();
+            //queries3.Add(new List<int>() { 2, 6, 8 });
+            //queries3.Add(new List<int>() { 3, 5, 7 });
+            //queries3.Add(new List<int>() { 1, 8, 1 });
+            //queries3.Add(new List<int>() { 5, 9, 15 });
+
+
+            ////HackerArraySolutions.arrayManipulation(5, queries);
+            ////HackerArraySolutions.arrayManipulation2(5, queries);
+            ////HackerArraySolutions.arrayManipulation(10, queries2);
+            ////HackerArraySolutions.arrayManipulation2(10, queries2);
+            //HackerArraySolutions.arrayManipulation(10, queries3);
+            //HackerArraySolutions.arrayManipulation2(10, queries3);
+
+            #endregion
+
+            #region Make Anagram
+
+            //int result1 = HackerArraySolutions.makeAnagram("cde", "abc");
+            //int result2 = HackerArraySolutions.makeAnagram("cde", "dcf");
+            //int result3 = HackerArraySolutions.makeAnagram("fcrxzwscanmligyxyvym", "jxwtrhvujlmrpdoqbisbwhmgpmeoke");
+
+            #endregion
+
+            #region Alternating Characters
+
+            //int result1 = HackerArraySolutions.alternatingCharacters("AAAA");
+            //int result2 = HackerArraySolutions.alternatingCharacters("BBBBB");
+            //int result3 = HackerArraySolutions.alternatingCharacters("ABABABAB");
+
+            #endregion
+
+            #region plusMinus
+
+            //HackerArraySolutions.plusMinus(new List<int>() { 1, 1, 0, -1, -1 });
+
+            #endregion
+
+            #region miniMaxSum
+
+            //HackerArraySolutions.miniMaxSum(new List<int>() { 1, 2, 3, 4, 5 });
+
+            #endregion
+
+            #region timeConversion
+
+            //HackerArraySolutions.timeConversion("12:01:00AM");
+            //HackerArraySolutions.timeConversion("12:01:00PM");
+            //HackerArraySolutions.timeConversion("07:01:45PM");
+            //HackerArraySolutions.timeConversion("07:01:45AM");
+
+            #endregion
+
+            #region IsPalindrome Number
+
+            //bool pal1 = Palindrome.IsPalindrome(121);
+            //bool pal2 = Palindrome.IsPalindrome(-121);
+            //bool pal3 = Palindrome.IsPalindrome(122);
+            //bool pal4 = Palindrome.IsPalindrome(421);
+            //bool pal5 = Palindrome.IsPalindrome(4114);
+
+            #endregion
+
+            #region RomanToInt
+
+            //int roman1 = ArraySolutions.RomanToInt("III");
+            //int roman2 = ArraySolutions.RomanToInt("LVIII");
+            //int roman3 = ArraySolutions.RomanToInt("MCMXCIV");
+
+            #endregion
+
+            #region LongestCommonPrefix
+
+            //string longest1 = ArraySolutions.LongestCommonPrefix(new string[] { "flo", "flow", "floor" });
+            //string longest2 = ArraySolutions.LongestCommonPrefix(new string[] { "dog", "racecar", "car" });
+
+            #endregion
+
+            #region diagonalDifference
+
+            //var numbers = new List<List<int>>();
+            //numbers.Add(new List<int>() { 1, 2, 3 });
+            //numbers.Add(new List<int>() { 4, 5, 6 });
+            //numbers.Add(new List<int>() { 9, 8, 9 });
+            //int diag1 = HackerArraySolutions.diagonalDifference(numbers);
+
+            #endregion
+
+            #region Find median
+
+            //int miResult = Sorting.findMedian();
+
+            #endregion
+
+            #region Quick Sort
+
+            //int[] miResult = Sorting.SortNumber(new int[] { 3, 1, 6, 5, 2 });
+
+            #endregion
+
+            #region AdjacentElementsProduct
+            //int[] arr = { 6, 2, 3, 8 };
+            //var result = AdjacentElementsProduct.Product(arr);
+            #endregion
+
+            #region CoinsChangeV2
+            //int[] arr = { 2, 4, 6, 10 };
+            //var result = CoinsChangeV2.getNumberOfWays(16, arr);
+            #endregion
+
+            #region CheckRecordSolution
+            //bool maxResult = CheckRecordSolution.CheckRecord("PPALLP");
+            //bool maxResult1 = CheckRecordSolution.CheckRecord("PPALLL");
+            #endregion
+
+            #region CheckRecordSolution
+            //int[][] arr = new int[3][];
+            //arr[0] = new int[] { 2, 1, 1 };
+            //arr[1] = new int[] { 2, 3, 1 };
+            //arr[2] = new int[] { 3, 4, 1 };
+            //int maxResult = CheckRecordSolution.NetworkDelayTime(arr, 4, 2);
+            #endregion
+
+            #region CutTheSticks
+            //var maxResult = HackerArraySolutions.CutTheSticks(new List<int> { 5, 4, 4, 2, 2, 8 });
+            //var maxResult = HackerArraySolutions.CutTheSticks(new List<int> { 1, 2, 3, 4, 3, 3, 2, 1 });
+            #endregion
+
+            #region Shuffle
+            //var maxResult = ArraySolutions.Shuffle(new int[] { 2, 5, 1, 3, 4, 7 }, 3);
+            //var maxResult2 = ArraySolutions.Shuffle(new int[] { 1, 2, 3, 4, 4, 3, 2, 1 }, 4);
+            #endregion
+
+            #region MaxRepOpt1
+            //var maxResult = ArraySolutions.MaxRepOpt1("ababa");
+            //var maxResult2 = ArraySolutions.MaxRepOpt1("aaabaaa");
+            //var maxResult3 = ArraySolutions.MaxRepOpt1("aaaaa");
+            #endregion
+
+            #region BestHand
+            //var maxResult = ArraySolutions.BestHand(new int[] { 13, 2, 3, 1, 9 }, new char[] { 'a', 'a', 'a', 'a', 'a' });
+            //var maxResult2 = ArraySolutions.BestHand(new int[] { 4, 4, 2, 4, 4 }, new char[] { 'd', 'a', 'a', 'b', 'c' });
+            //var maxResult3 = ArraySolutions.BestHand(new int[] { 10, 10, 2, 12, 9 }, new char[] { 'a', 'b', 'c', 'a', 'd' });
+            #endregion
+
+            #region BestHand
+            //var maxResult = ArraySolutions.ZeroFilledSubarray(new int[] { 1, 3, 0, 0, 2, 0, 0, 4 });
+            //var maxResult2 = ArraySolutions.ZeroFilledSubarray(new int[] { 0, 0, 0, 2, 0, 0 });
+            //var maxResult3 = ArraySolutions.ZeroFilledSubarray(new int[] { 2, 10, 2019 });
+            #endregion
+
+            #region decryptPassword Not passing all tests
+            //var maxResult = HackerArraySolutions.decryptPassword("43Ah*ck0rr0nk");
+            //var maxResult2 = HackerArraySolutions.decryptPassword("1Bl*Kg*u0");
+            #endregion
+
+            #region Valid Parentheses
+            //var maxResult = StackSolutions.IsValid("()[]{}");
+            //var maxResult2 = StackSolutions.IsValid("{{({})}}");
+            //var maxResult3 = StackSolutions.IsValid("()[(]){}");
+            #endregion
+
+            #region RemoveDuplicates
+            //var maxResult = ArraySolutions.RemoveDuplicates(new int[] { 1, 1, 2, 3, 4, 4, 4 });
+            //var maxResult2 = ArraySolutions.RemoveDuplicates(new int[] { 0, 0, 1, 1, 1, 2, 2, 3, 3, 4 });
+            #endregion
+
+            #region PivotIndex
+            //var maxResult = ArraySolutions.PivotIndex(new int[] { 1, 7, 3, 6, 5, 6 });
+            //var maxResult2 = ArraySolutions.PivotIndex(new int[] { 1, 2, 3 });
+            //var maxResult3 = ArraySolutions.PivotIndex(new int[] { 2, 1, -1 });
+            #endregion
+
+            #endregion
+
+            #region Binary Search
+            //int result1 = searching.BinarySearch(new int[] { 1, 2, 3, 4, 5 }, 0, 0, 7);
+            //int result2 = searching.BinarySearch(new int[] { 1, 2, 3, 4, 5 }, 0, 0, 5);
+            #endregion
+
+            #region Reserved words
+
+            //string rev1 = ReverseStrSolutioniii.ReverseWords("Let's take LeetCode contest");
+            //string value = string.Empty;
+            #endregion
+
+            #region Fastest sorting squares
+            //var rev1 = HackerArraySolutions.SortedSquares(new int[] { -11, -1, 0, 3, 10 });
+            //string value = string.Empty;
+            #endregion
+
+            #region Move Zeroes
+            //ArrayOperation.MoveZeroes(new int[] { 0, 1, 0, 0, 1, 1, 0, 1 });
+            //string value = string.Empty;
+            #endregion
+
+            #region Two Sum Great Solution
+            //var resSum = ArrayOperation.TwoSumGreatSol(new int[] { 2, 7, 11, 15 }, 9);
+            //var resSum1 = ArrayOperation.TwoSumGreatSol(new int[] { 2, 3, 4 }, 6);
+            //var resSum2 = ArrayOperation.TwoSumGreatSol(new int[] { -1, 0 }, -1);
+            //string value = string.Empty;
+            #endregion
+
+            #region ReverseString
+            //ArraySolutions.ReverseString(new char[] { 'h', 'e', 'l', 'l', 'o' });
+            //ArraySolutions.ReverseString(new char[] { 'H', 'a', 'e', 'n', 'a', 'h' });
+            #endregion
+
+            #region Count Bad Pairs
+            //var resSum = ArraySolutions.CountBadPairs(new int[] { 1, 2, 3, 4, 5 });
+            //var resSum22 = ArraySolutions.CountBadPairs(new int[] { 4, 1, 3, 3 });
+            //var resSum = ArraySolutions.CountBadPairs2(new int[] { 1, 2, 3, 7, 11 });
+            //var resSum22 = ArraySolutions.CountBadPairs2(new int[] { 4, 1, 3, 3 });
+            //string value23 = string.Empty;
+            #endregion
+
+            #region Count K Difference
+            //int sol1 = ArraySolutions.CountKDifference(new int[] { 10, 2, 10, 9, 1, 6, 8, 9, 2, 8 }, 5);
+            //string value12 = string.Empty;
+            #endregion
+
+            #region Find Pairs
+            //var resSum = ArraySolutions.FindPairs(new int[] { 1, 2, 3, 4, 5 }, 1);
+            //var resSum22 = ArraySolutions.FindPairs(new int[] { 3, 1, 4, 1, 5 }, 2);
+            //var resSum = ArraySolutions.CountBadPairs2(new int[] { 1, 2, 3, 7, 11 });
+            //var resSum22 = ArraySolutions.CountBadPairs2(new int[] { 4, 1, 3, 3 });
+            //string value233 = string.Empty;
+            #endregion
+
+            #region Merge Similar Items
+            //int[][] arr1 = new int[3][];
+            //arr1[0] = new int[] { 1, 1 };
+            //arr1[1] = new int[] { 4, 5 };
+            //arr1[2] = new int[] { 3, 8 };
+
+            //int[][] arr2 = new int[2][];
+            //arr2[0] = new int[] { 3, 1 };
+            //arr2[1] = new int[] { 1, 5 };
+
+            //var sol1 = ArraySolutions.MergeSimilarItems(arr1, arr2);
+            //string value12 = string.Empty;
+            #endregion
+
+            #region Depth First
+            //NodeString tree = DepthFirstTree.CreateNewNode("a");
+            //tree.left = DepthFirstTree.CreateNewNode("b");
+            //tree.right = DepthFirstTree.CreateNewNode("c");
+            //tree.left.left = DepthFirstTree.CreateNewNode("d");
+            //tree.left.right = DepthFirstTree.CreateNewNode("e");
+            //tree.right.right = DepthFirstTree.CreateNewNode("f");
+            //var treeResult = DepthFirstTree.DepthTranverse(tree);
+            //var treeResult = DepthFirstTree.DepthTranverseRecursive(tree);
+            //var treeResult = DepthFirstTree.CheckTarget(tree, "j");
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(3);
+            //tree.left = DepthFirstTree.CreateNewNode(11);
+            //tree.right = DepthFirstTree.CreateNewNode(4);
+            //tree.left.left = DepthFirstTree.CreateNewNode(4);
+            //tree.left.right = DepthFirstTree.CreateNewNode(-2);
+            //tree.right.right = DepthFirstTree.CreateNewNode(1);
+            ////var treeResult = DepthFirstTree.SumTree(tree);
+            //var treeResult = DepthFirstTree.MaxPathSumTree(tree);
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(1);
+            //tree.left = DepthFirstTree.CreateNewNode(2);
+            //tree.right = DepthFirstTree.CreateNewNode(3);
+            //tree.left.left = DepthFirstTree.CreateNewNode(4);
+            //tree.left.right = DepthFirstTree.CreateNewNode(5);
+            //tree.right.left = DepthFirstTree.CreateNewNode(6);
+            //tree.right.right = DepthFirstTree.CreateNewNode(7);
+            //var treeResult = DepthFirstTree.InorderTraversal(tree);
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(1);
+            //tree.right = DepthFirstTree.CreateNewNode(2);
+            //tree.right.left = DepthFirstTree.CreateNewNode(3);
+            //var treeResult = DepthFirstTree.InorderTraversal(tree);
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(2);
+            //tree.right = DepthFirstTree.CreateNewNode(3);
+            //tree.left = DepthFirstTree.CreateNewNode(1);
+            //var treeResult = DepthFirstTree.IsValidBST(tree);
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(5);
+            //tree.left = DepthFirstTree.CreateNewNode(1);
+            //tree.right = DepthFirstTree.CreateNewNode(4);
+            //tree.right.left = DepthFirstTree.CreateNewNode(3);
+            //tree.right.right = DepthFirstTree.CreateNewNode(6);
+            //var treeResult = DepthFirstTree.IsValidBST(tree);
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(5);
+            //tree.left = DepthFirstTree.CreateNewNode(4);
+            //tree.right = DepthFirstTree.CreateNewNode(6);
+            //tree.right.left = DepthFirstTree.CreateNewNode(3);
+            //tree.right.right = DepthFirstTree.CreateNewNode(7);
+            //var treeResult = DepthFirstTree.IsValidBST(tree);
+
+            //NodeInt tree = DepthFirstTree.CreateNewNode(32);
+            //tree.left = DepthFirstTree.CreateNewNode(26);
+            //tree.right = DepthFirstTree.CreateNewNode(47);
+            //tree.left.left = DepthFirstTree.CreateNewNode(19);
+            //tree.right.right = DepthFirstTree.CreateNewNode(56);
+            //tree.left.left.right = DepthFirstTree.CreateNewNode(27);
+            //var treeResult = DepthFirstTree.IsValidBST(tree);
+
+
+            string value233 = string.Empty;
+            #endregion
+
+            #region Breath First
+            //NodeString tree = BreathFirstTree.CreateNewNode("a");
+            //tree.left = BreathFirstTree.CreateNewNode("b");
+            //tree.right = BreathFirstTree.CreateNewNode("c");
+            //tree.left.left = BreathFirstTree.CreateNewNode("d");
+            //tree.left.right = BreathFirstTree.CreateNewNode("e");
+            //tree.right.right = BreathFirstTree.CreateNewNode("f");
+            //var treeResult = BreathFirstTree.BreathTranverse(tree);
+            //string value233 = string.Empty;
+            #endregion
+
+            #region Longest substring alpha repeating characters
+            //string wordTest = "abdaaba";
+            ////string wordTest = "abcbacde";
+            //int maxL = Contest311Solution.longestSubstringCharacters(wordTest);
+            #endregion
+
+            #region Sum Prefix Scores
+            //int[] maxL = Contest311Solution.SumPrefixScores(new string[] { "abc", "ab", "bc", "b" });
+            //int[] maxL = Contest311Solution.SumPrefixScores(new string[] { "abcd" });
+            #endregion
+
+            #region Closesest
+
+            //HackerArraySolutions.Closesest(new List<int> { 6, 2, 4, 10 });
+            //HackerArraySolutions.Closesest(new List<int> { 4, 2, 1, 3 });
+            //HackerArraySolutions.Closesest(new List<int> { 4, 4, -2, -1, 3 });
+
+            #endregion
+
+            //Contest95.CategorizeBox(10000,1,1,1);
+
+            //DataStream obj = new DataStream(4, 3);
+            //bool param_1 = obj.Consec(4);
+            //bool param_2 = obj.Consec(4);
+            //bool param_3 = obj.Consec(4);
+            //bool param_4 = obj.Consec(3);
+
+            //Contest95.XorBeauty(new int[] { 1, 4 });
+            //Contest95.XorBeauty(new int[] { 15, 45, 20, 2, 34, 35, 5, 44, 32, 30 });
+
+
+            //int minResult = getMini(new List<int>() { 1, 7, 2, 3, });
 
             Console.ReadLine();
         }
+
+        public static int getMini(List<int> plates)
+        {
+            int min = plates[0];
+            int max = plates[0];
+            int counter = 0;
+
+            for(int i = 1; i < plates.Count; i++)
+            {
+                if(plates[i] < min)
+                {
+                    min = plates[i];
+                }
+
+                if(plates[i] > max)
+                {
+                    max = plates[i];
+                }
+            }
+
+            if(min == plates[0] && max == plates[plates.Count - 1])
+            {
+                return counter;
+            }
+
+            if(min == plates[0])
+            {
+                for(int i = 0; i < plates.Count-1; i++)
+                {
+                    if(max == plates[i])
+                    {
+                        counter++;
+                        plates[i] = plates[i + 1];
+                        plates[i + 1] = max;
+                    }
+                }
+            }
+
+            if (max == plates[plates.Count - 1])
+            {
+                for (int i = plates.Count - 1; i > 0; i--)
+                {
+                    if (min == plates[i])
+                    {
+                        counter++;
+                        plates[i] = plates[i - 1];
+                        plates[i - 1] = min;
+                    }
+                }
+            }
+
+            return counter;
+        }
+
+        #region Inheritance
+
+        public class ClassBlue
+        {
+            public virtual string Print()
+            {
+                return "Blue";
+            }
+        }
+
+        public class ClassRed : ClassBlue
+        {
+            public override string Print()
+            {
+                return "Red";
+            }
+        }
+
+        public class ClassYellow : ClassRed
+        {
+            public new string Print()
+            {
+                return "Yellow";
+            }
+        }
+
+        public class Sample1 : Sample2
+        {
+            public string Print()
+            {
+                return "2";
+            }
+        }
+
+        public class Sample2
+        {
+            public virtual string Print()
+            {
+                return "1";
+            }
+        }
+
+        public static int TestPrint()
+        {
+            return 2;
+        }
+
+        public static string ArrayChallenge(string[] strArr)
+        {
+            int sum = 0;
+            bool hasAce = false;
+            string highestCard = string.Empty;
+            Dictionary<string, int> cards = new Dictionary<string, int>();
+            cards["ace"] = 11;
+            cards["two"] = 2;
+            cards["three"] = 3;
+            cards["four"] = 4;
+            cards["five"] = 5;
+            cards["six"] = 6;
+            cards["seven"] = 7;
+            cards["eight"] = 8;
+            cards["nine"] = 9;
+            cards["ten"] = 10;
+            cards["jack"] = 10;
+            cards["queen"] = 10;
+            cards["king"] = 10;
+
+            for(int i =0; i < strArr.Length; i++)
+            {
+                if(strArr[i] == "ace")
+                {
+                    hasAce = true;
+                }
+
+                if(string.IsNullOrEmpty(highestCard))
+                {
+                    highestCard = strArr[i];
+                }
+                else
+                {
+                    if(cards[highestCard] <= cards[strArr[i]])
+                    {
+                        highestCard = strArr[i];
+                    }
+                }
+                sum += cards[strArr[i]];
+            }
+
+            if(sum > 21 && hasAce)
+            {
+                sum -= 10;
+                return $"Below {highestCard}";
+            }else if (sum > 21)
+            {
+                return $"Above {highestCard}";
+            }
+
+            return $"Blackjack {highestCard}";
+
+        }
+
+        public static void solve(double meal_cost, int tip_percent, int tax_percent)
+        {
+            decimal tax = (decimal)tax_percent / 100 * (decimal)meal_cost;
+            decimal tip = (decimal)tip_percent / 100 * (decimal)meal_cost;
+            decimal result = (decimal)meal_cost + tax + tip;
+            Console.WriteLine($"{Math.Round(result, 0)}");
+        }
+
+        #endregion
+
     }
 }
 
